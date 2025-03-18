@@ -1,15 +1,15 @@
 {
     "projects": [
         {
-        "name": "Ellis App",
-        "developer": "mit",
-        "designer": "Yan Chen",
-        "client": "Geo Browser",
-        "project-url": "https://testflight.apple.com/join/564UVcAx",
-        "video-url": "https://www.loom.com/share/66482837ccfd4916b201a4240957057d?t=1",
-        "repo-link": "https://github.com/Valyria-Studios/ellis_app",
-        "client-url": "https://www.geobrowser.io/",
-        "description": "Designed to help volunteers at organizations like YWAM to better track and refer unhoused folks to social services in SF. What started as a pro-bono venture has now evolved into a fully funded client project, thanks to Geo Browser's interest in using their blockchain technology for the app's backend. "
+            "name": "Ellis App",
+            "developer": "mit",
+            "designer": "Yan Chen",
+            "client": "Geo Browser",
+            "project-url": "https://testflight.apple.com/join/564UVcAx",
+            "video-url": "https://www.loom.com/share/66482837ccfd4916b201a4240957057d?t=1",
+            "repo-link": "https://github.com/Valyria-Studios/ellis_app",
+            "client-url": "https://www.geobrowser.io/",
+            "description": "Designed to help volunteers at organizations like YWAM to better track and refer unhoused folks to social services in SF. What started as a pro-bono venture has now evolved into a fully funded client project, thanks to Geo Browser's interest in using their blockchain technology for the app's backend. "
         }
     ]
 }
