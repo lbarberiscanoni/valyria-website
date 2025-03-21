@@ -1,7 +1,6 @@
 ## ROADMAP
 - [ ] Home Page 
-- [ ] Navbar 
-    - [ ] Footer
+- [ ] Footer
 - [ ] Create "Our Services" page (outline the unique business model)
 - [ ] Implement global styling (e.g., using Tailwind CSS)
     - [ ] Test responsiveness and accessibility across devices
@@ -9,6 +8,11 @@
 - [ ] Sort projects by date 
 - [ ] Backfill past projects
 - [ ] Connect Vercel to the valyriastudios.com domain
+
+## Mar 21st 2025
+
+- Ok let's do this 
+- [x] Navbar 
 
 ## Mar 18th 2025
 
