@@ -1,5 +1,5 @@
 ## ROADMAP
-- [ ] Home Page 
+
 - [ ] Footer
 - [ ] Create "Our Services" page (outline the unique business model)
 - [ ] Implement global styling (e.g., using Tailwind CSS)
@@ -13,6 +13,9 @@
 
 - Ok let's do this 
 - [x] Navbar 
+- [x] Home Page 
+    - started styling a little bit like https://readymag.com/designstories/
+    - Arguably I should drop our Work page
 
 ## Mar 18th 2025
 
