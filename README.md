@@ -1,7 +1,6 @@
 ## ROADMAP
 
 - [ ] Footer
-- [ ] Create "Our Services" page (outline the unique business model)
 - [ ] Implement global styling (e.g., using Tailwind CSS)
     - [ ] Test responsiveness and accessibility across devices
 - [ ] Add CV look to portfolio pages
@@ -16,6 +15,8 @@
 - [x] Home Page 
     - started styling a little bit like https://readymag.com/designstories/
     - Arguably I should drop our Work page
+- [x] Create "Our Services" page (outline the unique business model)
+    - It kinda looks bad and at least it's an initial tackle at this
 
 ## Mar 18th 2025
 
