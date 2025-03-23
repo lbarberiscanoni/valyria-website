@@ -1,12 +1,18 @@
 ## ROADMAP
 
 - [ ] Footer
-- [ ] Implement global styling (e.g., using Tailwind CSS)
+
     - [ ] Test responsiveness and accessibility across devices
 - [ ] Add CV look to portfolio pages
 - [ ] Sort projects by date 
 - [ ] Backfill past projects
 - [ ] Connect Vercel to the valyriastudios.com domain
+
+## Mar 22nd 2025
+
+- ok let's do this
+    - first step is giving Claude context again
+        - then we drop trying to have it see it on its own simulator and instead I'll just show pictures
 
 ## Mar 21st 2025
 
@@ -17,6 +23,26 @@
     - Arguably I should drop our Work page
 - [x] Create "Our Services" page (outline the unique business model)
     - It kinda looks bad and at least it's an initial tackle at this
+- [ ] Implement global styling (e.g., using Tailwind CSS)
+    - let's see the structure it proposes
+        src/
+        ├── app/
+        │   ├── globals.css         # Global styles and Tailwind imports
+        │   └── layout.js           # Root layout with Tailwind classes
+        ├── components/
+        │   ├── ui/                 # Reusable UI components
+        │   │   ├── Button.js
+        │   │   ├── Card.js
+        │   │   └── ...
+        │   ├── layout/             # Layout components
+        │   │   ├── Footer.js       # Your pending footer component
+        │   │   └── NavBar.js       # Your existing navbar
+        │   └── project/            # Project-specific components
+        │       ├── ProjectCard.js  # For homepage grid
+        │       └── ...
+        └── styles/
+            └── tailwind-utils.js   # Any custom utility functions
+    - let's leverage Claude to iterate on the aesthetic 
 
 ## Mar 18th 2025
 

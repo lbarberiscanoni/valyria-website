@@ -1,29 +1,35 @@
-// src/components/NavBar.js
 "use client"
 
 import Link from "next/link";
+import { usePathname } from 'next/navigation';
 
 export default function NavBar() {
+  const pathname = usePathname();
+  
+  const isActive = (path) => {
+    return pathname === path ? 'text-primary font-medium' : 'text-secondary hover:text-primary';
+  };
+
   return (
-    <nav style={{ padding: "1rem", borderBottom: "1px solid #eaeaea" }}>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", maxWidth: "1200px", margin: "0 auto" }}>
+    <nav className="py-4 border-b border-gray-200">
+      <div className="container-custom flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" style={{ fontWeight: "bold", fontSize: "1.5rem", textDecoration: "none", color: "black" }}>
+        <Link href="/" className="font-bold text-2xl text-primary">
           Valyria Studios
         </Link>
 
         {/* Navigation Links */}
-        <div style={{ display: "flex", gap: "2rem" }}>
-          <Link href="/" style={{ textDecoration: "none", color: "#666" }}>
+        <div className="flex gap-8">
+          <Link href="/" className={`${isActive('/')} transition-colors duration-200`}>
             Home
           </Link>
-          <Link href="/work" style={{ textDecoration: "none", color: "#666" }}>
+          <Link href="/work" className={`${isActive('/work')} transition-colors duration-200`}>
             Work
           </Link>
-          <Link href="/team" style={{ textDecoration: "none", color: "#666" }}>
+          <Link href="/team" className={`${isActive('/team')} transition-colors duration-200`}>
             Team
           </Link>
-          <Link href="/services" style={{ textDecoration: "none", color: "#666" }}>
+          <Link href="/services" className={`${isActive('/services')} transition-colors duration-200`}>
             Services
           </Link>
         </div>
