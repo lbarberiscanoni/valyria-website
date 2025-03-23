@@ -32,7 +32,7 @@ export default function Team() {
         <div className="container-custom">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Our Team</h1>
           <p className="text-xl max-w-2xl">
-            Meet the talented individuals who bring Valyria Studios' unique vision to life
+            Meet the talented individuals who bring Valyria Studios&apos; unique vision to life
           </p>
         </div>
       </section>
@@ -121,7 +121,7 @@ export default function Team() {
         <div className="container-custom max-w-4xl text-center">
           <h2 className="text-3xl font-bold mb-6">Join Our Team</h2>
           <p className="text-lg mb-8">
-            Are you a student looking to gain real-world experience in software development? We're always looking for talented individuals to join our team.
+            Are you a student looking to gain real-world experience in software development? We&apos;re always looking for talented individuals to join our team.
           </p>
           
           <div className="bg-gray-50 p-8 rounded-lg">

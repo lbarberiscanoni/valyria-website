@@ -243,7 +243,7 @@ export default function Portfolio({ params }) {
         <div className="container-custom text-center">
           <h2 className="text-3xl font-bold mb-6">Interested in working together?</h2>
           <p className="text-xl max-w-2xl mx-auto mb-8">
-            Feel free to reach out if you'd like to collaborate or learn more about my work
+            Feel free to reach out if you&apos;d like to collaborate or learn more about my work
           </p>
           <a 
             href={`mailto:${username}@valyriastudios.com`} 

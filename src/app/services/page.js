@@ -185,7 +185,7 @@ export default function Services() {
             <div>
               <h3 className="text-xl font-bold mb-3">Why a subscription model?</h3>
               <p className="text-gray-600">
-                Our subscription model aligns our incentives with yours. Instead of rushing to complete work to move on to the next project, we're invested in your long-term success, providing continuous improvements and support.
+                Our subscription model aligns our incentives with yours. Instead of rushing to complete work to move on to the next project, we&apos;re invested in your long-term success, providing continuous improvements and support.
               </p>
             </div>
             
@@ -199,14 +199,14 @@ export default function Services() {
             <div>
               <h3 className="text-xl font-bold mb-3">What if I need to cancel?</h3>
               <p className="text-gray-600">
-                We understand that needs change. Our subscriptions are flexible, and you can cancel with a 30-day notice. We'll ensure a smooth transition and provide you with all project assets and documentation.
+                We understand that needs change. Our subscriptions are flexible, and you can cancel with a 30-day notice. We&apos;ll ensure a smooth transition and provide you with all project assets and documentation.
               </p>
             </div>
             
             <div>
               <h3 className="text-xl font-bold mb-3">Do you offer custom packages?</h3>
               <p className="text-gray-600">
-                Yes, we understand that every project is unique. Contact us to discuss your specific needs, and we'll create a custom package that works for you.
+                Yes, we understand that every project is unique. Contact us to discuss your specific needs, and we&apos;ll create a custom package that works for you.
               </p>
             </div>
           </div>
@@ -218,7 +218,7 @@ export default function Services() {
         <div className="container-custom text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to get started?</h2>
           <p className="text-xl max-w-2xl mx-auto mb-8">
-            Let's build something amazing together. Contact us today to discuss your project.
+            Let&apos;s build something amazing together. Contact us today to discuss your project.
           </p>
           <a 
             href="mailto:contact@valyriastudios.com" 

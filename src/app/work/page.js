@@ -98,7 +98,7 @@ export default function Work() {
                         href={`/${slug}`}
                         className="btn border border-black hover:bg-black hover:text-white"
                       >
-                        Developer's Portfolio
+                        Developer&apos;s Portfolio
                       </Link>
                     </div>
                   </div>
