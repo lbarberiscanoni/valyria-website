@@ -25,6 +25,11 @@
 - [ ] Connect Vercel to the valyriastudios.com domain
 - [ ] Test responsiveness and accessibility across devices
 
+## Mar 24th 2025
+
+- ok let's do this
+    - first step is to fire up Claude
+
 ## Mar 22nd 2025
 
 - ok let's do this

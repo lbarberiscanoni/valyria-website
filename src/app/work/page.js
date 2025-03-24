@@ -8,55 +8,55 @@ export default function Work() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-black text-white py-24">
-        <div className="container-custom">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Our Work</h1>
-          <p className="text-xl max-w-2xl">
+      <section className="section-hero">
+        <div className="container-2xl">
+          <h1 className="heading-xl mb-6">Our Work</h1>
+          <p className="text-body-lg max-w-2xl">
             Showcasing the innovative projects built by our talented student developers under expert guidance
           </p>
         </div>
       </section>
       
       {/* Projects Section */}
-      <section className="py-24">
-        <div className="container-custom">
+      <section className="section-white">
+        <div className="container-2xl">
           {projects.map((project, index) => {
             const slug = project.developer.toLowerCase().replace(/\s+/g, "-");
             
             return (
               <div key={index} className="mb-24 last:mb-0">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div className="grid-2-cols">
                   {/* Project Image/Placeholder */}
-                  <div className="bg-gray-100 h-80 flex items-center justify-center">
+                  <div className="bg-gray-100 h-80 flex-center">
                     <span className="text-2xl text-gray-500">{project.name}</span>
                   </div>
                   
                   {/* Project Details */}
                   <div>
-                    <h2 className="text-3xl font-bold mb-4">{project.name}</h2>
+                    <h2 className="heading-md mb-4">{project.name}</h2>
                     
                     <div className="grid grid-cols-2 gap-4 mb-6">
                       <div>
-                        <p className="text-sm text-gray-500 font-medium">Client</p>
-                        <p className="text-lg">{project.client}</p>
+                        <p className="text-caption font-medium">Client</p>
+                        <p className="text-body-lg">{project.client}</p>
                       </div>
                       <div>
-                        <p className="text-sm text-gray-500 font-medium">Developer</p>
-                        <Link href={`/${slug}`} className="text-lg hover:underline">
+                        <p className="text-caption font-medium">Developer</p>
+                        <Link href={`/${slug}`} className="text-body-lg hover:underline">
                           {project.developer}
                         </Link>
                       </div>
                       <div>
-                        <p className="text-sm text-gray-500 font-medium">Designer</p>
-                        <p className="text-lg">{project.designer}</p>
+                        <p className="text-caption font-medium">Designer</p>
+                        <p className="text-body-lg">{project.designer}</p>
                       </div>
                       <div>
-                        <p className="text-sm text-gray-500 font-medium">Year</p>
-                        <p className="text-lg">2023</p>
+                        <p className="text-caption font-medium">Year</p>
+                        <p className="text-body-lg">2023</p>
                       </div>
                     </div>
                     
-                    <p className="text-lg mb-8">
+                    <p className="text-body mb-8">
                       {project.description}
                     </p>
                     
@@ -66,7 +66,7 @@ export default function Work() {
                           href={project["project-url"]} 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="btn bg-black text-white hover:bg-gray-800"
+                          className="btn btn-primary"
                         >
                           View Live Project
                         </a>
@@ -77,7 +77,7 @@ export default function Work() {
                           href={project["repo-link"]} 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="btn border border-black hover:bg-black hover:text-white"
+                          className="btn btn-secondary"
                         >
                           GitHub Repository
                         </a>
@@ -88,7 +88,7 @@ export default function Work() {
                           href={project["video-url"]} 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="btn border border-black hover:bg-black hover:text-white"
+                          className="btn btn-secondary"
                         >
                           Watch Demo
                         </a>
@@ -96,7 +96,7 @@ export default function Work() {
                       
                       <Link 
                         href={`/${slug}`}
-                        className="btn border border-black hover:bg-black hover:text-white"
+                        className="btn btn-secondary"
                       >
                         Developer&apos;s Portfolio
                       </Link>
@@ -110,15 +110,15 @@ export default function Work() {
       </section>
       
       {/* Call to Action */}
-      <section className="py-24 bg-black text-white">
-        <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Have a project in mind?</h2>
-          <p className="text-xl max-w-2xl mx-auto mb-8">
+      <section className="section-cta">
+        <div className="container-md">
+          <h2 className="heading-md mb-6">Have a project in mind?</h2>
+          <p className="text-body-lg max-w-2xl mx-auto mb-8">
             Let our team of talented student developers bring your vision to life
           </p>
           <Link 
             href="/services" 
-            className="btn bg-white text-black hover:bg-gray-200"
+            className="btn btn-white"
           >
             Explore Our Services
           </Link>

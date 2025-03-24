@@ -8,22 +8,22 @@ export default function Footer() {
   
   return (
     <footer className="bg-black text-white py-12">
-      <div className="container-custom">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="container-2xl">
+        <div className="grid-3-cols">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Valyria Studios</h3>
+            <h3 className="heading-xs mb-4">Valyria Studios</h3>
             <p className="mb-4 text-gray-300">
               Creating software solutions while providing real-world experience to student developers.
             </p>
-            <p className="text-sm text-gray-400">
+            <p className="text-body-sm text-gray-400">
               © {currentYear} Valyria Studios. All rights reserved.
             </p>
           </div>
           
           {/* Site Links */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Site</h3>
+            <h3 className="heading-xs mb-4">Site</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/" className="text-gray-300 hover:text-white transition-colors">
@@ -50,13 +50,13 @@ export default function Footer() {
           
           {/* Contact */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Contact</h3>
+            <h3 className="heading-xs mb-4">Contact</h3>
             <p className="text-gray-300 mb-2">
               Interested in working with us?
             </p>
             <Link 
               href="mailto:contact@valyriastudios.com" 
-              className="inline-block bg-white text-black px-4 py-2 font-medium rounded hover:bg-gray-200 transition-colors"
+              className="btn btn-sm btn-white"
             >
               Get in touch
             </Link>

@@ -2,9 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ==============================
+   1. BASE STYLES & VARIABLES
+   ============================== */
+:root {
+  /* Color system */
+  --color-primary: #000000;
+  --color-secondary: #666666;
+  --color-accent: #ffffff;
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+  
+  /* Spacing system */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  
+  /* Typography */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
+    font-family: var(--font-sans);
   }
   
   body {
@@ -14,49 +47,111 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-bold;
   }
-  
-  h1 {
-    @apply text-4xl md:text-5xl xl:text-6xl;
+}
+
+/* ==============================
+   2. LAYOUT COMPONENTS
+   ============================== */
+@layer components {
+  /* Container systems */
+  .container-base {
+    @apply w-full mx-auto px-4 sm:px-6 lg:px-8;
   }
   
-  h2 {
-    @apply text-3xl md:text-4xl;
+  .container-sm {
+    @apply container-base max-w-3xl;
   }
   
-  h3 {
-    @apply text-xl md:text-2xl;
+  .container-md {
+    @apply container-base max-w-4xl;
   }
   
-  a {
-    @apply transition-colors duration-200;
+  .container-lg {
+    @apply container-base max-w-5xl;
+  }
+  
+  .container-xl {
+    @apply container-base max-w-6xl;
+  }
+  
+  .container-2xl {
+    @apply container-base max-w-7xl;
+  }
+  
+  /* Section layouts */
+  .section {
+    @apply py-12 md:py-16 lg:py-24;
+  }
+  
+  .section-sm {
+    @apply py-8 md:py-12;
+  }
+  
+  .section-lg {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+  
+  /* Flex layouts */
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+  
+  .flex-col-center {
+    @apply flex flex-col items-center justify-center;
+  }
+  
+  /* Grid layouts */
+  .grid-auto-fit {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+  }
+  
+  .grid-2-cols {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-8;
+  }
+  
+  .grid-3-cols {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+  }
+  
+  .grid-4-cols {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8;
   }
 }
 
+/* ==============================
+   3. UI COMPONENTS
+   ============================== */
 @layer components {
-  .container-custom {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
-  }
-  
+  /* Button system */
   .btn {
     @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded transition-colors duration-200;
   }
   
   .btn-sm {
-    @apply px-4 py-2 text-sm;
+    @apply px-4 py-2 text-sm font-medium rounded;
+  }
+  
+  .btn-lg {
+    @apply px-8 py-4 text-lg font-medium rounded;
   }
   
   .btn-primary {
     @apply bg-black text-white hover:bg-gray-800;
   }
   
-  .btn-outline {
+  .btn-secondary {
     @apply border border-black text-black hover:bg-black hover:text-white;
   }
   
-  .section {
-    @apply py-16 md:py-24;
+  .btn-white {
+    @apply bg-white text-black hover:bg-gray-200;
   }
   
+  /* Card system */
   .card {
     @apply bg-white rounded-lg shadow-md overflow-hidden transition-shadow hover:shadow-lg;
   }
@@ -65,11 +160,40 @@
     @apply p-6;
   }
   
-  .divider {
-    @apply border-t border-gray-200 my-8;
+  .card-title {
+    @apply text-xl font-bold mb-2;
   }
   
-  /* Text styles */
+  .card-subtitle {
+    @apply text-sm text-gray-600 mb-4;
+  }
+  
+  .card-action {
+    @apply mt-4 flex justify-start;
+  }
+  
+  /* Form elements */
+  .form-input {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-black focus:border-black outline-none transition-all duration-200;
+  }
+  
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+  }
+  
+  .form-error {
+    @apply mt-1 text-sm text-red-600;
+  }
+  
+  .form-group {
+    @apply mb-4;
+  }
+}
+
+/* ==============================
+   4. TYPOGRAPHY COMPONENTS
+   ============================== */
+@layer components {
   .heading-xl {
     @apply text-5xl md:text-6xl font-bold;
   }
@@ -86,42 +210,39 @@
     @apply text-2xl md:text-3xl font-bold;
   }
   
+  .heading-xs {
+    @apply text-xl md:text-2xl font-bold;
+  }
+  
+  .text-body-lg {
+    @apply text-lg md:text-xl leading-relaxed;
+  }
+  
   .text-body {
-    @apply text-base md:text-lg leading-relaxed;
+    @apply text-base leading-relaxed;
   }
   
-  /* Form elements */
-  .form-input {
-    @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-black focus:border-black outline-none transition-all duration-200;
+  .text-body-sm {
+    @apply text-sm leading-relaxed;
   }
   
-  .form-label {
-    @apply block text-sm font-medium text-gray-700 mb-1;
+  .text-caption {
+    @apply text-sm text-gray-600;
   }
   
-  .form-error {
-    @apply mt-1 text-sm text-red-600;
+  .text-link {
+    @apply text-black font-medium border-b border-black hover:border-b-2 transition-all;
+  }
+}
+
+/* ==============================
+   5. UTILITY COMPONENTS
+   ============================== */
+@layer components {
+  .divider {
+    @apply border-t border-gray-200 my-8;
   }
   
-  /* Layout utilities */
-  .flex-center {
-    @apply flex items-center justify-center;
-  }
-  
-  .flex-between {
-    @apply flex items-center justify-between;
-  }
-  
-  /* Animations */
-  .hover-lift {
-    @apply transition-transform duration-200 hover:-translate-y-1;
-  }
-  
-  .hover-scale {
-    @apply transition-transform duration-200 hover:scale-105;
-  }
-  
-  /* Line clamp utilities */
   .line-clamp-1 {
     @apply overflow-hidden text-ellipsis whitespace-nowrap;
   }
@@ -138,5 +259,34 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;  
     overflow: hidden;
+  }
+  
+  .hover-lift {
+    @apply transition-transform duration-200 hover:-translate-y-1;
+  }
+  
+  .hover-scale {
+    @apply transition-transform duration-200 hover:scale-105;
+  }
+}
+
+/* ==============================
+   6. SECTION VARIATIONS
+   ============================== */
+@layer components {
+  .section-hero {
+    @apply bg-black text-white py-24;
+  }
+  
+  .section-gray {
+    @apply bg-gray-50 py-24;
+  }
+  
+  .section-white {
+    @apply bg-white py-24;
+  }
+  
+  .section-cta {
+    @apply bg-black text-white py-24 text-center;
   }
 }

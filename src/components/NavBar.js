@@ -1,3 +1,4 @@
+// src/components/NavBar.js
 "use client"
 
 import Link from "next/link";
@@ -12,7 +13,7 @@ export default function NavBar() {
 
   return (
     <nav className="py-4 border-b border-gray-200">
-      <div className="container-custom flex justify-between items-center">
+      <div className="container-2xl flex-between">
         {/* Logo */}
         <Link href="/" className="font-bold text-2xl text-primary">
           Valyria Studios
