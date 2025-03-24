@@ -1,14 +1,8 @@
 ## ROADMAP
 
-- [ ] Backfill past projects (live project, repo link, demo link)
-    - [ ] Carbon Trust
-    - [ ] Net Project
-    - [ ] GBA
-    - [ ] Roo
-    - [ ] FantasySCOTUS
-    - [ ] Poverty Pockets
-    - [ ] Farmer Website
 - [ ] Sort projects by date 
+    - [ ] Add a "date" attribute
+    - [ ] Eventually add "days to completion" 
 - [ ] Add Teammates (pic, linkedin, github)
     - [ ] Mit
     - [ ] Lorenzo
@@ -61,6 +55,27 @@
             - Button
             - Card
     - ok now let's update the rest of the website with this component architecture
+
+- [ ] Backfill past projects (live project, repo link, demo link)
+    - [x] Carbon Trust
+    - [x] Net Project
+    - [x] GBA
+    - [x] Roo
+    - [x] FantasySCOTUS
+    - [x] Farmer Website
+    - [x] Poverty Pockets
+- let's make a clear template
+```{
+    "name": "",
+    "developer": "",
+    "designer": "",
+    "client": "",
+    "project-url": "",
+    "video-url": "",
+    "repo-link": "",
+    "client-url": "",
+    "description": ""
+}```
 
 ## Mar 22nd 2025
 

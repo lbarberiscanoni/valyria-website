@@ -1,8 +1,9 @@
+
 {
     "projects": [
         {
             "name": "Ellis App",
-            "developer": "mit",
+            "developer": "Mit Patel",
             "designer": "Yan Chen",
             "client": "Geo Browser",
             "project-url": "https://testflight.apple.com/join/564UVcAx",
@@ -10,6 +11,83 @@
             "repo-link": "https://github.com/Valyria-Studios/ellis_app",
             "client-url": "https://www.geobrowser.io/",
             "description": "Designed to help volunteers at organizations like YWAM to better track and refer unhoused folks to social services in SF. What started as a pro-bono venture has now evolved into a fully funded client project, thanks to Geo Browser's interest in using their blockchain technology for the app's backend. "
+        },
+        {
+            "name": "Cedar Grove Carbon Trust",
+            "developer": "Noah Broome",
+            "designer": "",
+            "client": "Sam McClure",
+            "project-url": "https://cedar-grove-foundation.vercel.app/",
+            "video-url": "",
+            "repo-link": "https://github.com/Valyria-Studios/carbon-trust",
+            "client-url": "https://law.stanford.edu/sam-mcclure/",
+            "description": "Cedar Grove partners with leading organizations to acquire the best carbon credits at the best prices. Donations fund projects that save crucial natural ecosystems, repair damage, and protect against future harm. Projects must demonstrate real impact, as measured by strict criteria and expert review. The Foundation holds in credits in the Donor’s name."
+        },
+        {
+            "name": "Net Project",
+            "developer": "Noah Broome",
+            "designer": "Marina Wei & Ali Kapadia",
+            "client": "Net Project",
+            "project-url": "https://www.netproject.org/",
+            "video-url": "",
+            "repo-link": "https://github.com/TheNetProject/netprojectapp",
+            "client-url": "https://www.netproject.org/",
+            "description": "The Net Project is a research-informed 501(c)(3) nonprofit dedicated to helping people live meaningful and flourishing lives."
+        },
+        {
+            "name": "Generosity Bay Area",
+            "developer": "Tim Cheung",
+            "designer": "Christina Boiles",
+            "client": "Generosity Bay Area (GBA)",
+            "project-url": "https://www.generositybayarea.org/",
+            "video-url": "",
+            "repo-link": "https://github.com/Valyria-Studios/gba-donations-page",
+            "client-url": "https://www.generositybayarea.org/",
+            "description": ""
+        },
+        {
+            "name": "Roo",
+            "developer": "Tim Cheung",
+            "designer": "Madison Minsk",
+            "client": "Stanford GSB Team (Tom, Madison, Leif)",
+            "project-url": "https://roo-frontend-mocha.vercel.app/login",
+            "video-url": "",
+            "repo-link": "",
+            "client-url": "",
+            "description": ""
+        },
+        {
+            "name": "FantasySCOTUS",
+            "developer": "",
+            "designer": "Shanik Miedreich",
+            "client": "Cassandra Labs Foundation",
+            "project-url": "https://www.figma.com/design/YpsMtGkNlOwhR0T3MXmA6p/FANTASY-SCOTUS?node-id=0-1&p=f",
+            "video-url": "",
+            "repo-link": "https://www.figma.com/design/YpsMtGkNlOwhR0T3MXmA6p/FANTASY-SCOTUS?node-id=0-1&p=f",
+            "client-url": "https://www.cassandra-labs.com/",
+            "description": "A complete redesign of https://fantasyscotus.net/ for the modern world. The Mobile App reworks the research survey to become more like a gamified crowdsourcing mechanism for the outcomes of Supreme Court cases"
+        },
+        {
+            "name": "Farmer Website",
+            "developer": "Emily Chang",
+            "designer": "Emily Chang",
+            "client": "Earth Blessings",
+            "project-url": "https://earthblessingcustomer.vercel.app/",
+            "video-url": "",
+            "repo-link": "https://github.com/emilyrainschang/FarmerWebsite_Emily",
+            "client-url": "https://earthblessings.co/",
+            "description": ""
+        },
+        {
+            "name": "Poverty Pockets",
+            "developer": "Rohit ",
+            "designer": "Finny Abraham",
+            "client": "Coalition Alleviating Poverty",
+            "project-url": "",
+            "video-url": "",
+            "repo-link": "",
+            "client-url": "https://capsv.org/",
+            "description": ""
         }
     ]
 }
