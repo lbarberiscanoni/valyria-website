@@ -14,6 +14,8 @@
     - [ ] Emily
     - [ ] Joel
     - [ ] Treesa
+- [ ] Map "teammates" to "developers"
+    - [ ] ensure their name shows up under [username] for the url
 - [ ] Add CV look to portfolio pages
 - [ ] Connect Vercel to the valyriastudios.com domain
 - [ ] Test responsiveness and accessibility across devices
