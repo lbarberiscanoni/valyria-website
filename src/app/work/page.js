@@ -1,6 +1,10 @@
 // src/app/work/page.js
 import Link from 'next/link';
 import projectsData from "@/app/data/projects.json";
+import Section from "@/components/Section";
+import Container from "@/components/Container";
+import Button from "@/components/Button";
+import { Grid2Cols } from "@/components/Grid";
 
 export default function Work() {
   const { projects } = projectsData;
@@ -8,26 +12,26 @@ export default function Work() {
   return (
     <>
       {/* Hero Section */}
-      <section className="section-hero">
-        <div className="container-2xl">
+      <Section variant="hero">
+        <Container>
           <h1 className="heading-xl mb-6">Our Work</h1>
           <p className="text-body-lg max-w-2xl">
             Showcasing the innovative projects built by our talented student developers under expert guidance
           </p>
-        </div>
-      </section>
+        </Container>
+      </Section>
       
       {/* Projects Section */}
-      <section className="section-white">
-        <div className="container-2xl">
+      <Section>
+        <Container>
           {projects.map((project, index) => {
             const slug = project.developer.toLowerCase().replace(/\s+/g, "-");
             
             return (
               <div key={index} className="mb-24 last:mb-0">
-                <div className="grid-2-cols">
+                <Grid2Cols>
                   {/* Project Image/Placeholder */}
-                  <div className="bg-gray-100 h-80 flex-center">
+                  <div className="bg-gray-100 h-80 flex items-center justify-center">
                     <span className="text-2xl text-gray-500">{project.name}</span>
                   </div>
                   
@@ -62,68 +66,62 @@ export default function Work() {
                     
                     <div className="flex flex-wrap gap-4">
                       {project["project-url"] && (
-                        <a 
+                        <Button 
                           href={project["project-url"]} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="btn btn-primary"
+                          variant="primary"
                         >
                           View Live Project
-                        </a>
+                        </Button>
                       )}
                       
                       {project["repo-link"] && (
-                        <a 
+                        <Button 
                           href={project["repo-link"]} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="btn btn-secondary"
+                          variant="secondary"
                         >
                           GitHub Repository
-                        </a>
+                        </Button>
                       )}
                       
                       {project["video-url"] && (
-                        <a 
+                        <Button 
                           href={project["video-url"]} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="btn btn-secondary"
+                          variant="secondary"
                         >
                           Watch Demo
-                        </a>
+                        </Button>
                       )}
                       
-                      <Link 
+                      <Button 
                         href={`/${slug}`}
-                        className="btn btn-secondary"
+                        variant="secondary"
                       >
                         Developer&apos;s Portfolio
-                      </Link>
+                      </Button>
                     </div>
                   </div>
-                </div>
+                </Grid2Cols>
               </div>
             );
           })}
-        </div>
-      </section>
+        </Container>
+      </Section>
       
       {/* Call to Action */}
-      <section className="section-cta">
-        <div className="container-md">
+      <Section variant="cta">
+        <Container size="md">
           <h2 className="heading-md mb-6">Have a project in mind?</h2>
           <p className="text-body-lg max-w-2xl mx-auto mb-8">
             Let our team of talented student developers bring your vision to life
           </p>
-          <Link 
+          <Button 
             href="/services" 
-            className="btn btn-white"
+            variant="white"
           >
             Explore Our Services
-          </Link>
-        </div>
-      </section>
+          </Button>
+        </Container>
+      </Section>
     </>
   );
 }

@@ -1,6 +1,10 @@
 // src/app/[username]/page.js
 import Link from 'next/link';
 import projectsData from "@/app/data/projects.json";
+import Section from "@/components/Section";
+import Container from "@/components/Container";
+import Button from "@/components/Button";
+import { Grid2Cols } from "@/components/Grid";
 
 export default function Portfolio({ params }) {
   const { username } = params;
@@ -19,18 +23,18 @@ export default function Portfolio({ params }) {
   return (
     <>
       {/* Hero Section */}
-      <section className="section-hero">
-        <div className="container-2xl">
+      <Section variant="hero">
+        <Container>
           <h1 className="heading-xl mb-6">{displayName}</h1>
           <p className="text-body-lg">
             Student Developer at Valyria Studios
           </p>
-        </div>
-      </section>
+        </Container>
+      </Section>
       
       {/* About Section */}
-      <section className="section-white">
-        <div className="container-md">
+      <Section>
+        <Container size="md">
           <div className="flex flex-col md:flex-row gap-12">
             <div className="w-48 h-48 bg-gray-200 rounded-full mx-auto md:mx-0 flex-shrink-0"></div>
             
@@ -43,40 +47,34 @@ export default function Portfolio({ params }) {
               </p>
               
               <div className="flex gap-4">
-                <a 
-                  href="#" 
-                  className="text-link"
-                >
+                <a href="#" className="text-link">
                   GitHub Profile
                 </a>
-                <a 
-                  href="#" 
-                  className="text-link"
-                >
+                <a href="#" className="text-link">
                   LinkedIn Profile
                 </a>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </Container>
+      </Section>
       
       {/* Projects Section */}
       {userProjects.length > 0 ? (
-        <section className="section-gray">
-          <div className="container-2xl">
+        <Section variant="gray">
+          <Container>
             <h2 className="heading-md mb-12 text-center">Projects</h2>
             
             <div className="space-y-16">
               {userProjects.map((project, index) => (
-                <div key={index} className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <Grid2Cols key={index} className={index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}>
                   {/* Project Image/Placeholder - Alternate left and right */}
-                  <div className={`bg-gray-200 h-80 flex-center ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
+                  <div className={`bg-gray-200 h-80 flex-center ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
                     <span className="text-2xl text-gray-500">{project.name}</span>
                   </div>
                   
                   {/* Project Details */}
-                  <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
+                  <div className={index % 2 === 1 ? 'lg:col-start-1' : ''}>
                     <h3 className="heading-xs mb-4">{project.name}</h3>
                     
                     <div className="grid grid-cols-2 gap-4 mb-6">
@@ -104,59 +102,53 @@ export default function Portfolio({ params }) {
                     
                     <div className="flex flex-wrap gap-4">
                       {project["project-url"] && (
-                        <a 
+                        <Button 
                           href={project["project-url"]} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="btn btn-primary"
+                          variant="primary"
                         >
                           View Live Project
-                        </a>
+                        </Button>
                       )}
                       
                       {project["repo-link"] && (
-                        <a 
+                        <Button 
                           href={project["repo-link"]} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="btn btn-secondary"
+                          variant="secondary"
                         >
                           GitHub Repository
-                        </a>
+                        </Button>
                       )}
                       
                       {project["video-url"] && (
-                        <a 
+                        <Button 
                           href={project["video-url"]} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="btn btn-secondary"
+                          variant="secondary"
                         >
                           Watch Demo
-                        </a>
+                        </Button>
                       )}
                     </div>
                   </div>
-                </div>
+                </Grid2Cols>
               ))}
             </div>
-          </div>
-        </section>
+          </Container>
+        </Section>
       ) : (
-        <section className="section-gray">
-          <div className="container-2xl text-center">
+        <Section variant="gray">
+          <Container className="text-center">
             <h2 className="heading-md mb-6">Projects</h2>
             <p className="text-body">No projects found for {displayName}</p>
-          </div>
-        </section>
+          </Container>
+        </Section>
       )}
       
       {/* Skills Section */}
-      <section className="section-white">
-        <div className="container-md">
+      <Section>
+        <Container size="md">
           <h2 className="heading-md mb-12 text-center">Skills</h2>
           
-          <div className="grid-2-cols">
+          <Grid2Cols>
             <div>
               <h3 className="heading-xs mb-4">Technical Skills</h3>
               <div className="space-y-4">
@@ -234,25 +226,25 @@ export default function Portfolio({ params }) {
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
-      </section>
+          </Grid2Cols>
+        </Container>
+      </Section>
       
       {/* Contact Section */}
-      <section className="section-cta">
-        <div className="container-md">
+      <Section variant="cta">
+        <Container size="md">
           <h2 className="heading-md mb-6">Interested in working together?</h2>
           <p className="text-body-lg max-w-2xl mx-auto mb-8">
             Feel free to reach out if you&apos;d like to collaborate or learn more about my work
           </p>
-          <a 
+          <Button 
             href={`mailto:${username}@valyriastudios.com`} 
-            className="btn btn-white"
+            variant="white"
           >
             Contact Me
-          </a>
-        </div>
-      </section>
+          </Button>
+        </Container>
+      </Section>
     </>
   );
 }

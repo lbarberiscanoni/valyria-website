@@ -1,20 +1,28 @@
 // src/app/services/page.js
+import Section from "@/components/Section";
+import Container from "@/components/Container";
+import Button from "@/components/Button";
+import Card from "@/components/Card";
+import { Grid3Cols } from "@/components/Grid";
+
 export default function Services() {
   return (
     <>
       {/* Hero Section */}
-      <section className="section-hero">
-        <div className="container-2xl text-center">
-          <h1 className="heading-xl mb-6">Our Services</h1>
-          <p className="text-body-lg max-w-2xl mx-auto">
-            A different approach to software development
-          </p>
-        </div>
-      </section>
+      <Section variant="hero">
+        <Container>
+          <div className="text-center">
+            <h1 className="heading-xl mb-6">Our Services</h1>
+            <p className="text-body-lg max-w-2xl mx-auto">
+              A different approach to software development
+            </p>
+          </div>
+        </Container>
+      </Section>
       
       {/* Subscription Model */}
-      <section className="section-white">
-        <div className="container-2xl">
+      <Section>
+        <Container>
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="heading-md mb-8">Our Subscription Model</h2>
             
@@ -31,7 +39,7 @@ export default function Services() {
             </p>
           </div>
           
-          <div className="grid-3-cols">
+          <Grid3Cols>
             {/* Base Plan */}
             <div className="border border-gray-200 rounded-lg overflow-hidden hover-scale">
               <div className="p-8">
@@ -59,9 +67,13 @@ export default function Services() {
                   </li>
                 </ul>
                 
-                <a href="mailto:contact@valyriastudios.com" className="btn btn-primary block w-full text-center">
+                <Button 
+                  href="mailto:contact@valyriastudios.com" 
+                  variant="primary"
+                  fullWidth
+                >
                   Contact Us
-                </a>
+                </Button>
               </div>
             </div>
             
@@ -95,9 +107,13 @@ export default function Services() {
                   </li>
                 </ul>
                 
-                <a href="mailto:contact@valyriastudios.com" className="btn btn-primary block w-full text-center">
+                <Button 
+                  href="mailto:contact@valyriastudios.com" 
+                  variant="primary"
+                  fullWidth
+                >
                   Contact Us
-                </a>
+                </Button>
               </div>
             </div>
             
@@ -134,21 +150,25 @@ export default function Services() {
                   </li>
                 </ul>
                 
-                <a href="mailto:contact@valyriastudios.com" className="btn btn-primary block w-full text-center">
+                <Button 
+                  href="mailto:contact@valyriastudios.com" 
+                  variant="primary"
+                  fullWidth
+                >
                   Contact Us
-                </a>
+                </Button>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </Grid3Cols>
+        </Container>
+      </Section>
       
       {/* How It Works */}
-      <section className="section-gray">
-        <div className="container-2xl">
+      <Section variant="gray">
+        <Container>
           <h2 className="heading-md mb-12 text-center">How It Works</h2>
           
-          <div className="grid-3-cols">
+          <Grid3Cols>
             <div className="text-center">
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-black text-white text-xl font-bold mb-4">1</div>
               <h3 className="heading-xs mb-3">Initial Consultation</h3>
@@ -172,13 +192,13 @@ export default function Services() {
                 We deliver regular updates and iterations, ensuring your application evolves with your needs.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
+          </Grid3Cols>
+        </Container>
+      </Section>
       
       {/* FAQ */}
-      <section className="section-white">
-        <div className="container-md">
+      <Section>
+        <Container size="md">
           <h2 className="heading-md mb-12 text-center">Frequently Asked Questions</h2>
           
           <div className="space-y-8">
@@ -210,24 +230,24 @@ export default function Services() {
               </p>
             </div>
           </div>
-        </div>
-      </section>
+        </Container>
+      </Section>
       
       {/* Call to Action */}
-      <section className="section-cta">
-        <div className="container-md">
+      <Section variant="cta">
+        <Container size="md">
           <h2 className="heading-md mb-6">Ready to get started?</h2>
           <p className="text-body-lg max-w-2xl mx-auto mb-8">
             Let&apos;s build something amazing together. Contact us today to discuss your project.
           </p>
-          <a 
+          <Button 
             href="mailto:contact@valyriastudios.com" 
-            className="btn btn-white"
+            variant="white"
           >
             Contact Us
-          </a>
-        </div>
-      </section>
+          </Button>
+        </Container>
+      </Section>
     </>
   );
 }

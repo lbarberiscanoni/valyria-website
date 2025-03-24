@@ -91,34 +91,100 @@
     @apply py-16 md:py-24 lg:py-32;
   }
   
-  /* Flex layouts */
-  .flex-center {
-    @apply flex items-center justify-center;
+  /* Section variations */
+  .section-hero {
+    @apply bg-black text-white py-16 md:py-20 lg:py-24;
   }
   
-  .flex-between {
-    @apply flex items-center justify-between;
+  .section-gray {
+    @apply bg-gray-50 py-16 md:py-20 lg:py-24;
   }
   
-  .flex-col-center {
-    @apply flex flex-col items-center justify-center;
+  .section-white {
+    @apply bg-white py-16 md:py-20 lg:py-24;
   }
   
-  /* Grid layouts */
-  .grid-auto-fit {
-    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+  .section-cta {
+    @apply bg-black text-white py-16 md:py-20 lg:py-24 text-center;
   }
   
-  .grid-2-cols {
-    @apply grid grid-cols-1 md:grid-cols-2 gap-8;
+  /* Button system */
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base font-medium rounded transition-colors duration-200;
   }
   
-  .grid-3-cols {
-    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+  .btn-sm {
+    @apply px-3 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium rounded;
   }
   
-  .grid-4-cols {
-    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8;
+  .btn-lg {
+    @apply px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-medium rounded;
+  }
+  
+  .btn-primary {
+    @apply bg-black text-white hover:bg-gray-800;
+  }
+  
+  .btn-secondary {
+    @apply border border-black text-black hover:bg-black hover:text-white;
+  }
+  
+  .btn-white {
+    @apply bg-white text-black hover:bg-gray-200;
+  }
+  
+  /* Card system */
+  .card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden transition-shadow hover:shadow-lg;
+  }
+  
+  .card-body {
+    @apply p-4 sm:p-6;
+  }
+  
+  .card-title {
+    @apply text-lg sm:text-xl font-bold mb-2;
+  }
+  
+  .card-subtitle {
+    @apply text-xs sm:text-sm text-gray-600 mb-4;
+  }
+  
+  .card-action {
+    @apply mt-4 flex flex-wrap gap-2 sm:gap-4;
+  }
+  
+  /* Typography */
+  .heading-xl {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold;
+  }
+  
+  .heading-lg {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold;
+  }
+  
+  .heading-md {
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold;
+  }
+  
+  .heading-sm {
+    @apply text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold;
+  }
+  
+  .heading-xs {
+    @apply text-base sm:text-lg md:text-xl lg:text-2xl font-bold;
+  }
+  
+  .text-body-lg {
+    @apply text-base sm:text-lg md:text-xl leading-relaxed;
+  }
+  
+  .text-body {
+    @apply text-sm sm:text-base leading-relaxed;
+  }
+  
+  .text-body-sm {
+    @apply text-xs sm:text-sm leading-relaxed;
   }
 }
 

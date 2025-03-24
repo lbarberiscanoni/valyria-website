@@ -1,6 +1,5 @@
 ## ROADMAP
 
-- [ ] Systematize the CSS
 - [ ] Backfill past projects (live project, repo link, demo link)
     - [ ] Carbon Trust
     - [ ] Net Project
@@ -29,6 +28,39 @@
 
 - ok let's do this
     - first step is to fire up Claude
+
+- [x] Systematize the CSS
+    - it did this pretty well, now most of the styling is happening in `global.css` which makes it easier to do global modifications
+    - Claude reccomended to setup a component library 
+        ```src/
+        ├── components/
+        │   ├── layout/
+        │   │   ├── Section.js
+        │   │   ├── Container.js
+        │   │   └── Grid.js
+        │   ├── ui/
+        │   │   ├── Button.js
+        │   │   ├── Card.js
+        │   │   ├── Heading.js
+        │   │   └── ProgressBar.js
+        │   ├── common/
+        │   │   ├── ProjectCard.js
+        │   │   ├── TeamMemberCard.js
+        │   │   ├── PricingCard.js
+        │   │   └── CheckItem.js
+        │   └── sections/
+        │       ├── Hero.js
+        │       ├── About.js
+        │       ├── Projects.js
+        │       └── CallToAction.js```
+    - the component library is not a bad because it makes the code more modular
+        - let's start with the basics
+            - Section
+            - Container
+            - Grid 
+            - Button
+            - Card
+    - ok now let's update the rest of the website with this component architecture
 
 ## Mar 22nd 2025
 

@@ -2,14 +2,17 @@
 "use client"
 
 import Link from "next/link";
+import Container from "@/components/Container";
+import { Grid3Cols } from "@/components/Grid";
+import Button from "@/components/Button";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   
   return (
     <footer className="bg-black text-white py-12">
-      <div className="container-2xl">
-        <div className="grid-3-cols">
+      <Container>
+        <Grid3Cols>
           {/* Company Info */}
           <div>
             <h3 className="heading-xs mb-4">Valyria Studios</h3>
@@ -54,12 +57,13 @@ export default function Footer() {
             <p className="text-gray-300 mb-2">
               Interested in working with us?
             </p>
-            <Link 
+            <Button 
               href="mailto:contact@valyriastudios.com" 
-              className="btn btn-sm btn-white"
+              variant="white"
+              size="small"
             >
               Get in touch
-            </Link>
+            </Button>
             
             <div className="mt-6 flex space-x-4">
               <a href="https://github.com/Valyria-Studios" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
@@ -74,8 +78,8 @@ export default function Footer() {
               </a>
             </div>
           </div>
-        </div>
-      </div>
+        </Grid3Cols>
+      </Container>
     </footer>
   );
 }
