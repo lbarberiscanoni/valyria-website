@@ -3,25 +3,18 @@
 - [ ] Sort projects by date 
     - [ ] Add a "date" attribute
     - [ ] Eventually add "days to completion" 
-- [ ] Map "teammates" to "developers"
-    - [ ] ensure their name shows up under [username] for the url
 - [ ] Add CV look to portfolio pages
 - [ ] Connect Vercel to the valyriastudios.com domain
 - [ ] Test responsiveness and accessibility across devices
 
 ## Mar 25th 2025
 
-- [ ] Add Teammates (pic, linkedin, github)
-    - [ ] Mit
-    - [ ] Lorenzo
-    - [ ] Yan 
-    - [ ] Noah
-    - [ ] Tim
-    - [ ] Shanik
-    - [ ] Rohit
-    - [ ] Emily
-    - [ ] Joel
-    - [ ] Treesa
+- [x] Add Teammates (pic, linkedin, github)
+
+- Next I need to fix the dynamic loops that are generating the Team page 
+
+- [x] Map "teammates" to "developers"
+    - [x] ensure their name shows up under [username] for the url
 
 ## Mar 24th 2025
 
@@ -70,7 +63,8 @@
     - [x] Farmer Website
     - [x] Poverty Pockets
 - let's make a clear template
-```{
+```
+{
     "name": "",
     "developer": "",
     "designer": "",
@@ -80,7 +74,8 @@
     "repo-link": "",
     "client-url": "",
     "description": ""
-}```
+}
+```
 
 ## Mar 22nd 2025
 

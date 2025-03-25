@@ -1,24 +1,57 @@
+"use client"
+
 // src/app/[username]/page.js
+import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import projectsData from "@/app/data/projects.json";
+import teamData from "@/app/data/team.json"; // Import team data
 import Section from "@/components/Section";
 import Container from "@/components/Container";
 import Button from "@/components/Button";
 import { Grid2Cols } from "@/components/Grid";
 
-export default function Portfolio({ params }) {
-  const { username } = params;
+export default function Portfolio() {
+  // Use the useParams hook to get the username parameter
+  const params = useParams();
+  const username = params.username;
   
-  // Format the username for display (capitalize first letter of each word)
-  const displayName = username
-    .split('-')
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(' ');
+  // Find the team member by normalizing the username
+  // This makes "/noah" work the same as "/noah-broome"
+  const normalizedUsername = username.toLowerCase();
   
-  // Find projects for this developer
+  // Check if this is a full name or just first name
+  const isFirstNameOnly = !normalizedUsername.includes('-');
+  
+  // Combine leadership and students
+  const allTeamMembers = [...teamData.leadership, ...teamData.students];
+  
+  // Find the team member
+  const teamMember = allTeamMembers.find(member => {
+    const fullName = member.name.toLowerCase().replace(/\s+/g, '-');
+    if (isFirstNameOnly) {
+      // Check if the first part of the name matches
+      const firstName = member.name.split(' ')[0].toLowerCase();
+      return firstName === normalizedUsername;
+    }
+    return fullName === normalizedUsername;
+  });
+  
+  // Find projects for this team member
   const userProjects = projectsData.projects.filter(
-    (project) => project.developer.toLowerCase().replace(/\s+/g, '-') === username.toLowerCase()
+    (project) => teamMember && project.developer === teamMember.name
   );
+
+  // If no team member found, use the URL to create a display name
+  let displayName;
+  if (teamMember) {
+    displayName = teamMember.name;
+  } else {
+    // Format the username for display (capitalize first letter of each word)
+    displayName = username
+      .split('-')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  }
 
   return (
     <>
@@ -27,7 +60,7 @@ export default function Portfolio({ params }) {
         <Container>
           <h1 className="heading-xl mb-6">{displayName}</h1>
           <p className="text-body-lg">
-            Student Developer at Valyria Studios
+            {teamMember ? teamMember.role : "Team Member"} at Valyria Studios
           </p>
         </Container>
       </Section>
@@ -36,32 +69,73 @@ export default function Portfolio({ params }) {
       <Section>
         <Container size="md">
           <div className="flex flex-col md:flex-row gap-12">
-            <div className="w-48 h-48 bg-gray-200 rounded-full mx-auto md:mx-0 flex-shrink-0"></div>
+            <div className="w-48 h-48 bg-gray-200 rounded-full mx-auto md:mx-0 flex-shrink-0">
+              {teamMember && teamMember.image && (
+                <img 
+                  src={teamMember.image} 
+                  alt={teamMember.name} 
+                  className="w-full h-full object-cover rounded-full"
+                />
+              )}
+            </div>
             
             <div>
               <h2 className="heading-md mb-6">About {displayName}</h2>
               
               <p className="text-body mb-6">
-                {displayName} is a student developer at Valyria Studios, gaining real-world experience while contributing to client projects. 
-                With a passion for technology and problem-solving, {displayName.split(' ')[0]} brings fresh perspectives and innovative solutions to every project.
+                {teamMember ? teamMember.bio : `${displayName} is a team member at Valyria Studios, contributing their talents to client projects and gaining valuable experience.`}
               </p>
               
               <div className="flex gap-4">
-                <a href="#" className="text-link">
-                  GitHub Profile
-                </a>
-                <a href="#" className="text-link">
-                  LinkedIn Profile
-                </a>
+                {teamMember && teamMember.links.github && (
+                  <a 
+                    href={teamMember.links.github} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-link"
+                  >
+                    GitHub Profile
+                  </a>
+                )}
+                
+                {teamMember && teamMember.links.linkedin && (
+                  <a 
+                    href={teamMember.links.linkedin} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-link"
+                  >
+                    LinkedIn Profile
+                  </a>
+                )}
               </div>
             </div>
           </div>
         </Container>
       </Section>
       
+      {/* Skills Section - Only show if team member is found */}
+      {teamMember && teamMember.skills && teamMember.skills.length > 0 && (
+        <Section variant="gray">
+          <Container size="md">
+            <h2 className="heading-md mb-6 text-center">Skills</h2>
+            <div className="flex flex-wrap justify-center gap-3">
+              {teamMember.skills.map((skill, index) => (
+                <span 
+                  key={index}
+                  className="px-4 py-2 bg-white border border-gray-200 rounded-full"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </Container>
+        </Section>
+      )}
+      
       {/* Projects Section */}
       {userProjects.length > 0 ? (
-        <Section variant="gray">
+        <Section variant={teamMember && teamMember.skills && teamMember.skills.length > 0 ? "white" : "gray"}>
           <Container>
             <h2 className="heading-md mb-12 text-center">Projects</h2>
             
@@ -88,7 +162,7 @@ export default function Portfolio({ params }) {
                       </div>
                       <div>
                         <p className="text-caption font-medium">Role</p>
-                        <p>Developer</p>
+                        <p>{teamMember ? teamMember.role : "Developer"}</p>
                       </div>
                       <div>
                         <p className="text-caption font-medium">Year</p>
@@ -135,100 +209,13 @@ export default function Portfolio({ params }) {
           </Container>
         </Section>
       ) : (
-        <Section variant="gray">
+        <Section variant={teamMember && teamMember.skills && teamMember.skills.length > 0 ? "white" : "gray"}>
           <Container className="text-center">
             <h2 className="heading-md mb-6">Projects</h2>
             <p className="text-body">No projects found for {displayName}</p>
           </Container>
         </Section>
       )}
-      
-      {/* Skills Section */}
-      <Section>
-        <Container size="md">
-          <h2 className="heading-md mb-12 text-center">Skills</h2>
-          
-          <Grid2Cols>
-            <div>
-              <h3 className="heading-xs mb-4">Technical Skills</h3>
-              <div className="space-y-4">
-                <div>
-                  <div className="flex-between mb-1">
-                    <span className="font-medium">JavaScript/React</span>
-                    <span>90%</span>
-                  </div>
-                  <div className="w-full bg-gray-200 h-2 rounded-full">
-                    <div className="bg-black h-2 rounded-full" style={{ width: '90%' }}></div>
-                  </div>
-                </div>
-                <div>
-                  <div className="flex-between mb-1">
-                    <span className="font-medium">HTML/CSS</span>
-                    <span>85%</span>
-                  </div>
-                  <div className="w-full bg-gray-200 h-2 rounded-full">
-                    <div className="bg-black h-2 rounded-full" style={{ width: '85%' }}></div>
-                  </div>
-                </div>
-                <div>
-                  <div className="flex-between mb-1">
-                    <span className="font-medium">Node.js</span>
-                    <span>80%</span>
-                  </div>
-                  <div className="w-full bg-gray-200 h-2 rounded-full">
-                    <div className="bg-black h-2 rounded-full" style={{ width: '80%' }}></div>
-                  </div>
-                </div>
-                <div>
-                  <div className="flex-between mb-1">
-                    <span className="font-medium">Python</span>
-                    <span>75%</span>
-                  </div>
-                  <div className="w-full bg-gray-200 h-2 rounded-full">
-                    <div className="bg-black h-2 rounded-full" style={{ width: '75%' }}></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div>
-              <h3 className="heading-xs mb-4">Soft Skills</h3>
-              <ul className="space-y-2">
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-black mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Problem Solving</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-black mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Team Collaboration</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-black mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Adaptability</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-black mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Critical Thinking</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-black mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Time Management</span>
-                </li>
-              </ul>
-            </div>
-          </Grid2Cols>
-        </Container>
-      </Section>
       
       {/* Contact Section */}
       <Section variant="cta">
@@ -238,7 +225,7 @@ export default function Portfolio({ params }) {
             Feel free to reach out if you&apos;d like to collaborate or learn more about my work
           </p>
           <Button 
-            href={`mailto:${username}@valyriastudios.com`} 
+            href={`mailto:${teamMember ? teamMember.name.toLowerCase().replace(/\s+/g, '.') : username}@valyriastudios.com`} 
             variant="white"
           >
             Contact Me
