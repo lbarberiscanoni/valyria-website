@@ -1,0 +1,103 @@
+{
+    "leadership": [
+      {
+        "name": "Lorenzo Barberis Canonico",
+        "role": "Founder & CTO",
+        "image": "/team/lorenzo.jpg",
+        "bio": "Former speech & debate coach turned tech entrepreneur. Lorenzo manages the development team, providing guidance to student developers.",
+        "links": {
+          "linkedin": "https://www.linkedin.com/in/lorenzo-barberis-canonico-612734aa/",
+          "github": "https://github.com/lorenzobc"
+        }
+      },
+      {
+        "name": "Yan Chen",
+        "role": "Design Lead",
+        "image": "/team/yan.jpg",
+        "bio": "Experienced designer who ensures all Valyria projects meet the highest standards of UX/UI design.",
+        "links": {
+          "linkedin": "https://www.linkedin.com/in/ychen/",
+          "github": ""
+        }
+      }
+    ],
+    "students": [
+      {
+        "name": "Mit Patel",
+        "role": "Engineer",
+        "image": "/team/mit.jpg",
+        "bio": "Computer Science student with a passion for mobile development. Currently working on the Ellis App project.",
+        "skills": ["React Native", "JavaScript", "Firebase", "Mobile Development"],
+        "links": {
+          "linkedin": "https://linkedin.com/in/mit-patel",
+          "github": "https://github.com/mitpatel"
+        }
+      },
+      {
+        "name": "Noah Broome",
+        "role": "Engineer",
+        "image": "/team/noah.jpg",
+        "bio": "Frontend specialist focusing on creating modern, responsive web applications. Lead developer for the Cedar Grove Carbon Trust and Net Project.",
+        "skills": ["React", "NextJS", "Tailwind CSS", "JavaScript"],
+        "links": {
+          "linkedin": "https://linkedin.com/in/noah-broome",
+          "github": "https://github.com/noahbroome"
+        }
+      },
+      {
+        "name": "Tim Cheung",
+        "role": "Senior Developer",
+        "image": "/team/tim.jpg",
+        "bio": "Dedicated to building user-friendly interfaces. Currently working on Generosity Bay Area and Roo projects.",
+        "skills": ["React", "UI/UX Implementation", "JavaScript", "CSS"],
+        "links": {
+          "linkedin": "https://linkedin.com/in/tim-cheung",
+          "github": "https://github.com/timcheung"
+        }
+      },
+      {
+        "name": "Shanik Miedreich",
+        "role": "Designer",
+        "image": "/team/shanik.jpg",
+        "bio": "Design student with a focus on creating intuitive and engaging UI/UX. Lead designer for the FantasySCOTUS project.",
+        "skills": ["Figma", "UI/UX Design", "Visual Design", "Prototyping"],
+        "links": {
+          "linkedin": "https://linkedin.com/in/shanik-miedreich",
+          "github": ""
+        }
+      },
+      {
+        "name": "Rohit",
+        "role": "Developer",
+        "image": "/team/rohit.jpg",
+        "bio": "Skilled in developing data-driven applications. Working on the Poverty Pockets project for Coalition Alleviating Poverty.",
+        "skills": ["JavaScript", "React", "Data Visualization", "API Integration"],
+        "links": {
+          "linkedin": "https://linkedin.com/in/rohit",
+          "github": "https://github.com/rohit"
+        }
+      },
+      {
+        "name": "Emily Chang",
+        "role": "Developer & Designer",
+        "image": "/team/emily.jpg",
+        "bio": "Multi-talented developer and designer working on the Farmer Website for Earth Blessings.",
+        "skills": ["Web Development", "UI Design", "JavaScript", "HTML/CSS"],
+        "links": {
+          "linkedin": "https://linkedin.com/in/emilychang",
+          "github": "https://github.com/emilyrainschang"
+        }
+      },
+      {
+        "name": "Treesa",
+        "role": "Developer",
+        "image": "/team/treesa.jpg",
+        "bio": "Specializing in frontend development with a focus on creating accessible and responsive web applications.",
+        "skills": ["React", "Accessibility", "JavaScript", "CSS"],
+        "links": {
+          "linkedin": "https://linkedin.com/in/treesa",
+          "github": "https://github.com/treesa"
+        }
+      }
+    ]
+  }
