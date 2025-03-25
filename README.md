@@ -3,6 +3,14 @@
 - [ ] Sort projects by date 
     - [ ] Add a "date" attribute
     - [ ] Eventually add "days to completion" 
+- [ ] Map "teammates" to "developers"
+    - [ ] ensure their name shows up under [username] for the url
+- [ ] Add CV look to portfolio pages
+- [ ] Connect Vercel to the valyriastudios.com domain
+- [ ] Test responsiveness and accessibility across devices
+
+## Mar 25th 2025
+
 - [ ] Add Teammates (pic, linkedin, github)
     - [ ] Mit
     - [ ] Lorenzo
@@ -14,11 +22,6 @@
     - [ ] Emily
     - [ ] Joel
     - [ ] Treesa
-- [ ] Map "teammates" to "developers"
-    - [ ] ensure their name shows up under [username] for the url
-- [ ] Add CV look to portfolio pages
-- [ ] Connect Vercel to the valyriastudios.com domain
-- [ ] Test responsiveness and accessibility across devices
 
 ## Mar 24th 2025
 

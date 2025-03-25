@@ -80,7 +80,7 @@
         },
         {
             "name": "Poverty Pockets",
-            "developer": "Rohit ",
+            "developer": "Rohit",
             "designer": "Finny Abraham",
             "client": "Coalition Alleviating Poverty",
             "project-url": "",
@@ -88,6 +88,17 @@
             "repo-link": "",
             "client-url": "https://capsv.org/",
             "description": ""
+        },
+        {
+            "name": "Driven",
+            "developer": "Tim Cheung",
+            "designer": "",
+            "client": "Deangelo Smith",
+            "project-url": "https://www.paywithdriven.com/",
+            "video-url": "",
+            "repo-link": "",
+            "client-url": "https://www.paywithdriven.com/",
+            "description": "Buy Now Pay Later for parking tickets"
         }
     ]
 }
