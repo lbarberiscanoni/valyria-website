@@ -1,4 +1,3 @@
-
 {
     "projects": [
         {
@@ -10,7 +9,9 @@
             "video-url": "https://www.loom.com/share/66482837ccfd4916b201a4240957057d?t=1",
             "repo-link": "https://github.com/Valyria-Studios/ellis_app",
             "client-url": "https://www.geobrowser.io/",
-            "description": "Designed to help volunteers at organizations like YWAM to better track and refer unhoused folks to social services in SF. What started as a pro-bono venture has now evolved into a fully funded client project, thanks to Geo Browser's interest in using their blockchain technology for the app's backend. "
+            "description": "Designed to help volunteers at organizations like YWAM to better track and refer unhoused folks to social services in SF. What started as a pro-bono venture has now evolved into a fully funded client project, thanks to Geo Browser's interest in using their blockchain technology for the app's backend. ",
+            "start_date": "2023-09-15",
+            "end_date": "2024-01-20"
         },
         {
             "name": "Cedar Grove Carbon Trust",
@@ -21,7 +22,9 @@
             "video-url": "",
             "repo-link": "https://github.com/Valyria-Studios/carbon-trust",
             "client-url": "https://law.stanford.edu/sam-mcclure/",
-            "description": "Cedar Grove partners with leading organizations to acquire the best carbon credits at the best prices. Donations fund projects that save crucial natural ecosystems, repair damage, and protect against future harm. Projects must demonstrate real impact, as measured by strict criteria and expert review. The Foundation holds in credits in the Donor’s name."
+            "description": "Cedar Grove partners with leading organizations to acquire the best carbon credits at the best prices. Donations fund projects that save crucial natural ecosystems, repair damage, and protect against future harm. Projects must demonstrate real impact, as measured by strict criteria and expert review. The Foundation holds in credits in the Donor's name.",
+            "start_date": "2023-07-10",
+            "end_date": "2023-11-05"
         },
         {
             "name": "Net Project",
@@ -32,7 +35,9 @@
             "video-url": "",
             "repo-link": "https://github.com/TheNetProject/netprojectapp",
             "client-url": "https://www.netproject.org/",
-            "description": "The Net Project is a research-informed 501(c)(3) nonprofit dedicated to helping people live meaningful and flourishing lives."
+            "description": "The Net Project is a research-informed 501(c)(3) nonprofit dedicated to helping people live meaningful and flourishing lives.",
+            "start_date": "2023-11-15",
+            "end_date": "2024-03-01"
         },
         {
             "name": "Generosity Bay Area",
@@ -43,7 +48,9 @@
             "video-url": "",
             "repo-link": "https://github.com/Valyria-Studios/gba-donations-page",
             "client-url": "https://www.generositybayarea.org/",
-            "description": ""
+            "description": "",
+            "start_date": "2023-10-01",
+            "end_date": "2024-02-15"
         },
         {
             "name": "Roo",
@@ -54,7 +61,9 @@
             "video-url": "",
             "repo-link": "",
             "client-url": "",
-            "description": ""
+            "description": "",
+            "start_date": "2023-08-20",
+            "end_date": "2023-12-10"
         },
         {
             "name": "FantasySCOTUS",
@@ -65,7 +74,9 @@
             "video-url": "",
             "repo-link": "https://www.figma.com/design/YpsMtGkNlOwhR0T3MXmA6p/FANTASY-SCOTUS?node-id=0-1&p=f",
             "client-url": "https://www.cassandra-labs.com/",
-            "description": "A complete redesign of https://fantasyscotus.net/ for the modern world. The Mobile App reworks the research survey to become more like a gamified crowdsourcing mechanism for the outcomes of Supreme Court cases"
+            "description": "A complete redesign of https://fantasyscotus.net/ for the modern world. The Mobile App reworks the research survey to become more like a gamified crowdsourcing mechanism for the outcomes of Supreme Court cases",
+            "start_date": "2024-01-05",
+            "end_date": "2024-04-20"
         },
         {
             "name": "Farmer Website",
@@ -76,7 +87,9 @@
             "video-url": "",
             "repo-link": "https://github.com/emilyrainschang/FarmerWebsite_Emily",
             "client-url": "https://earthblessings.co/",
-            "description": ""
+            "description": "",
+            "start_date": "2023-12-01",
+            "end_date": "2024-02-28"
         },
         {
             "name": "Poverty Pockets",
@@ -87,7 +100,9 @@
             "video-url": "",
             "repo-link": "",
             "client-url": "https://capsv.org/",
-            "description": ""
+            "description": "",
+            "start_date": "2024-02-10",
+            "end_date": ""
         },
         {
             "name": "Driven",
@@ -98,7 +113,9 @@
             "video-url": "",
             "repo-link": "",
             "client-url": "https://www.paywithdriven.com/",
-            "description": "Buy Now Pay Later for parking tickets"
+            "description": "Buy Now Pay Later for parking tickets",
+            "start_date": "2024-01-15",
+            "end_date": "2024-03-15"
         }
     ]
 }
