@@ -47,12 +47,12 @@
       {
         "name": "Tim Cheung",
         "role": "Senior Developer",
-        "image": "/team/tim.jpg",
+        "image": "/tim.jpg",
         "bio": "Dedicated to building user-friendly interfaces. Currently working on Generosity Bay Area and Roo projects.",
         "skills": ["React", "UI/UX Implementation", "JavaScript", "CSS"],
         "links": {
-          "linkedin": "https://linkedin.com/in/tim-cheung",
-          "github": "https://github.com/timcheung"
+          "linkedin": "https://www.linkedin.com/in/timothy-cheung/",
+          "github": "https://github.com/Timchung18"
         }
       },
       {
@@ -80,23 +80,23 @@
       {
         "name": "Emily Chang",
         "role": "Developer & Designer",
-        "image": "/team/emily.jpg",
+        "image": "/emily-chang.jpg",
         "bio": "Multi-talented developer and designer working on the Farmer Website for Earth Blessings.",
         "skills": ["Web Development", "UI Design", "JavaScript", "HTML/CSS"],
         "links": {
-          "linkedin": "https://linkedin.com/in/emilychang",
+          "linkedin": "https://www.linkedin.com/in/emilyrainschang/",
           "github": "https://github.com/emilyrainschang"
         }
       },
       {
-        "name": "Treesa",
+        "name": "Treesa Abraham",
         "role": "Developer",
-        "image": "/team/treesa.jpg",
+        "image": "/treesa.jpeg",
         "bio": "Specializing in frontend development with a focus on creating accessible and responsive web applications.",
         "skills": ["React", "Accessibility", "JavaScript", "CSS"],
         "links": {
           "linkedin": "https://linkedin.com/in/treesa",
-          "github": "https://github.com/treesa"
+          "github": "https://github.com/TreesaAbraham"
         }
       }
     ]

@@ -7,6 +7,18 @@
 - [ ] Connect Vercel to the valyriastudios.com domain
 - [ ] Test responsiveness and accessibility across devices
 
+## Mar 28th 2025
+
+- ok let's do this
+
+- let's go through the email thread and add people's stuff 
+
+- what's missing?
+    - we need a pic for Farmer's website
+    - GBA needs a video and description
+
+- we also need to make a list of testimonials
+
 ## Mar 25th 2025
 
 - [x] Add Teammates (pic, linkedin, github)

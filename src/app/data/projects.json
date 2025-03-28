@@ -40,32 +40,6 @@
             "end_date": "2024-03-01"
         },
         {
-            "name": "Generosity Bay Area",
-            "developer": "Tim Cheung",
-            "designer": "Christina Boiles",
-            "client": "Generosity Bay Area (GBA)",
-            "project-url": "https://www.generositybayarea.org/",
-            "video-url": "",
-            "repo-link": "https://github.com/Valyria-Studios/gba-donations-page",
-            "client-url": "https://www.generositybayarea.org/",
-            "description": "",
-            "start_date": "2023-10-01",
-            "end_date": "2024-02-15"
-        },
-        {
-            "name": "Roo",
-            "developer": "Tim Cheung",
-            "designer": "Madison Minsk",
-            "client": "Stanford GSB Team (Tom, Madison, Leif)",
-            "project-url": "https://roo-frontend-mocha.vercel.app/login",
-            "video-url": "",
-            "repo-link": "",
-            "client-url": "",
-            "description": "",
-            "start_date": "2023-08-20",
-            "end_date": "2023-12-10"
-        },
-        {
             "name": "FantasySCOTUS",
             "developer": "",
             "designer": "Shanik Miedreich",
@@ -105,17 +79,43 @@
             "end_date": ""
         },
         {
+            "name": "Generosity Bay Area",
+            "developer": "Tim Cheung",
+            "designer": "Christina Boiles",
+            "client": "Generosity Bay Area (GBA)",
+            "project-url": "", 
+            "video-url": "",
+            "repo-link": "https://github.com/Valyria-Studios/gba-donations-page",
+            "client-url": "https://www.generositybayarea.org/",
+            "description": "",
+            "start_date": "2024-04-01", 
+            "end_date": "2024-10-31"    
+        },
+        {
+            "name": "Roo",
+            "developer": "Tim Cheung",
+            "designer": "Madison Minsk",
+            "client": "Stanford GSB Team (Tom, Madison, Leif)",
+            "project-url": "https://roo-frontend-mocha.vercel.app/login",
+            "video-url": "",
+            "repo-link": "https://github.com/Timchung18/roo-frontend", 
+            "client-url": "",
+            "description": "",
+            "start_date": "2024-07-01", 
+            "end_date": "2024-10-31" 
+        },
+        {
             "name": "Driven",
             "developer": "Tim Cheung",
             "designer": "",
             "client": "Deangelo Smith",
-            "project-url": "https://www.paywithdriven.com/",
+            "project-url": "https://paywithdriven-app.vercel.app/", 
             "video-url": "",
-            "repo-link": "",
+            "repo-link": "https://github.com/Timchung18/driven_app", 
             "client-url": "https://www.paywithdriven.com/",
-            "description": "Buy Now Pay Later for parking tickets",
-            "start_date": "2024-01-15",
-            "end_date": "2024-03-15"
+            "description": "Buy Now Pay Later for parking tickets. Includes user frontend and admin dashboard applications.",
+            "start_date": "2024-10-01",
+            "end_date": "2024-12-31"
         }
     ]
 }
