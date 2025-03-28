@@ -1,5 +1,9 @@
 ## ROADMAP
 
+- [ ] team and projects backfill 
+    - [ ] Looms for every project for Previews
+    - [ ] Testimonials 
+- [ ] Testimonials
 - [ ] Sort projects by date 
     - [ ] Add a "date" attribute
     - [ ] Eventually add "days to completion" 
