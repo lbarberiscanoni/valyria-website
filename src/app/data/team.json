@@ -30,7 +30,7 @@
         "skills": ["React Native", "JavaScript", "Firebase", "Mobile Development"],
         "links": {
           "linkedin": "https://www.linkedin.com/in/mitpatel1/",
-          "github": "https://github.com/storm1486"
+          "github": "https://github.com/storm1486 "
         }
       },
       {
@@ -40,8 +40,8 @@
         "bio": "Frontend specialist focusing on creating modern, responsive web applications. Lead developer for the Cedar Grove Carbon Trust and Net Project.",
         "skills": ["React", "NextJS", "Tailwind CSS", "JavaScript"],
         "links": {
-          "linkedin": "https://linkedin.com/in/noah-broome",
-          "github": "https://github.com/noahbroome"
+          "linkedin": "https://www.linkedin.com/in/noah-broome/",
+          "github": "https://github.com/nmbroome"
         }
       },
       {
@@ -69,12 +69,12 @@
       {
         "name": "Rohit",
         "role": "Developer",
-        "image": "/team/rohit.jpg",
+        "image": "/rohit.png",
         "bio": "Skilled in developing data-driven applications. Working on the Poverty Pockets project for Coalition Alleviating Poverty.",
         "skills": ["JavaScript", "React", "Data Visualization", "API Integration"],
         "links": {
-          "linkedin": "https://linkedin.com/in/rohit",
-          "github": "https://github.com/rohit"
+          "linkedin": "https://www.linkedin.com/in/rohit-yarlagadda-585631196/",
+          "github": "https://github.com/rohityar/"
         }
       },
       {
