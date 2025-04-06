@@ -3,11 +3,11 @@
       {
         "name": "Lorenzo Barberis Canonico",
         "role": "Founder & CTO",
-        "image": "/team/lorenzo.jpg",
+        "image": "lorenzo.jpeg",
         "bio": "Former speech & debate coach turned tech entrepreneur. Lorenzo manages the development team, providing guidance to student developers.",
         "links": {
           "linkedin": "https://www.linkedin.com/in/lorenzo-barberis-canonico-612734aa/",
-          "github": "https://github.com/lorenzobc"
+          "github": "https://github.com/lbarberiscanoni"
         }
       },
       {
