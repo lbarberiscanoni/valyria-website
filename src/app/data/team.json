@@ -36,7 +36,7 @@
       {
         "name": "Noah Broome",
         "role": "Engineer",
-        "image": "/team/noah.jpg",
+        "image": "noah.jpeg",
         "bio": "Frontend specialist focusing on creating modern, responsive web applications. Lead developer for the Cedar Grove Carbon Trust and Net Project.",
         "skills": ["React", "NextJS", "Tailwind CSS", "JavaScript"],
         "links": {
