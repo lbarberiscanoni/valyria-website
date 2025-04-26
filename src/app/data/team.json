@@ -58,7 +58,7 @@
       {
         "name": "Shanik Miedreich",
         "role": "Designer",
-        "image": "/team/shanik.jpg",
+        "image": "shanik.png",
         "bio": "Design student with a focus on creating intuitive and engaging UI/UX. Lead designer for the FantasySCOTUS project.",
         "skills": ["Figma", "UI/UX Design", "Visual Design", "Prototyping"],
         "links": {
