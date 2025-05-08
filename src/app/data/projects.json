@@ -116,6 +116,19 @@
             "description": "Buy Now Pay Later for parking tickets. Includes user frontend and admin dashboard applications.",
             "start_date": "2024-10-01",
             "end_date": "2024-12-31"
+        },
+        {
+            "name": "Help One Child Survey",
+            "developer": "Meryl Marasigan",
+            "designer": "",
+            "client": "Help One Child",
+            "project-url": "https://help-one-child.vercel.app/", 
+            "video-url": "",
+            "repo-link": "https://github.com/merylmarasigan/HelpOneChild", 
+            "client-url": "https://helponechild.org/    ",
+            "description": "This project creates a tablet-friendly voting platform for Help One Child's fundraising events in partnership with CarePortal.",
+            "start_date": "2025-04-18",
+            "end_date": "2024-05-08"
         }
     ]
 }

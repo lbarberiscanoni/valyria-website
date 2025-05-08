@@ -98,6 +98,17 @@
           "linkedin": "https://linkedin.com/in/treesa",
           "github": "https://github.com/TreesaAbraham"
         }
+      },
+      {
+        "name": "Meryl Marasigan",
+        "role": "Developer",
+        "image": "/meryl.png",
+        "bio": "UC Irvine CS grad with experience in software development and testing. With a proven track record of programming competency, detail-oriented testing, and a versatile and collaborative work style, I am eager to apply my expertise, and strive for excellence in a dynamic work environment.",
+        "skills": ["Data Engineer", "Python", "C++", "React"],
+        "links": {
+          "linkedin": "https://www.linkedin.com/in/meryl-marasigan/",
+          "github": "https://github.com/merylmarasigan"
+        }
       }
     ]
   }
