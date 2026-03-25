@@ -91,9 +91,9 @@
       {
         "name": "Treesa Abraham",
         "role": "Developer",
-        "image": "/treesa.jpeg",
+        "image": "treesa.png",
         "bio": "Specializing in frontend development with a focus on creating accessible and responsive web applications.",
-        "skills": ["React", "Accessibility", "JavaScript", "CSS"],
+        "skills": ["React", "Accessibility", "JavaScript", "CSS", "Python", "HTML", "D3", "Seaborn"],
         "links": {
           "linkedin": "https://linkedin.com/in/treesa",
           "github": "https://github.com/TreesaAbraham"

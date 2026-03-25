@@ -129,6 +129,19 @@
             "description": "This project creates a tablet-friendly voting platform for Help One Child's fundraising events in partnership with CarePortal.",
             "start_date": "2025-04-18",
             "end_date": "2024-05-08"
+        },
+        {
+            "name": "Date Me Directory",
+            "developer": "Treesa Abraham",
+            "designer": "",
+            "client": "Client Name",
+            "project-url": "https://date-me-directory-ieco.vercel.app/",
+            "video-url": "",
+            "repo-link": "https://github.com/TreesaAbraham/DateMeDirectory",
+            "client-url": "",
+            "description": "",
+            "start_date": "",
+            "end_date": ""
         }
     ]
 }
