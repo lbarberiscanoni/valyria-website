@@ -53,18 +53,32 @@
             "end_date": "2024-04-20"
         },
         {
-            "name": "Farmer Website",
+            "name": "Pathways for Stanford",
             "developer": "Emily Chang",
             "designer": "Emily Chang",
-            "client": "Earth Blessings",
-            "project-url": "https://earthblessingcustomer.vercel.app/",
-            "video-url": "",
-            "repo-link": "https://github.com/emilyrainschang/FarmerWebsite_Emily",
-            "client-url": "https://earthblessings.co/",
-            "description": "",
+            "client": "Stanford",
+            "project-url": "https://pathways-app-psi.vercel.app/",
+            "video-url": "https://www.loom.com/share/b4897e3858fc4a6e9269e76ce2792ef1",
+            "repo-link": "https://github.com/Pathway-Stanford/pathways-app",
+            "client-url": "",
+            "description": "This project was designed to help minority and disadvantaged pre-med students connect with mentors, and also to help track Pathways alumni who support students pursuing careers in medicine.",
             "start_date": "2023-12-01",
             "end_date": "2024-02-28"
         },
+          {
+            "name": "GPSA for Stanford",
+            "developer": "Emily Chang",
+            "designer": "Emily Chang",
+            "client": "Stanford",
+            "project-url": "",
+            "video-url": "https://www.loom.com/share/e067603a2acd4a6685eeb52fe8c9ea04",
+            "repo-link": "https://github.com/engelhardtgpsa/spatial-alignment",
+            "client-url": "",
+            "description": "I helped a professor improve a scientific Python library used for statistical alignment of biological and spatial samples — such as tissue or skin — either to a reference or to one another, as well as for estimating signal patterns at different points within those samples. My contributions focused on making the library easier to package and distribute on PyPI, ensuring dependencies installed and loaded correctly, and setting up more reliable ongoing dependency maintenance.",
+            "start_date": "2023-12-01",
+            "end_date": "2024-02-28"
+        },
+       
         {
             "name": "Poverty Pockets",
             "developer": "Rohit",
@@ -134,7 +148,7 @@
             "name": "Date Me Directory",
             "developer": "Treesa Abraham",
             "designer": "",
-            "client": "Client Name",
+            "client": "",
             "project-url": "https://date-me-directory-ieco.vercel.app/",
             "video-url": "",
             "repo-link": "https://github.com/TreesaAbraham/DateMeDirectory",
