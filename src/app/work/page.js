@@ -31,10 +31,12 @@ export default function Work() {
               <div key={index} className="mb-24 last:mb-0">
                 <Grid2Cols>
                   {/* Project Image/Placeholder */}
-                  <div className="bg-gray-100 h-80 flex items-center justify-center">
-                    <span className="text-2xl text-gray-500">{project.name}</span>
-                  </div>
-                  
+                  <a href={project["video-url"]} target="_blank" rel="noopener noreferrer">
+                    <div className="bg-gray-200 h-80 flex items-center justify-center">
+                      <img src={project.thumbnail} alt={project.name} className="w-full h-full object-cover" />
+                    </div>
+                  </a>
+
                   {/* Project Details */}
                   <div>
                     <h2 className="heading-md mb-4">{project.name}</h2>

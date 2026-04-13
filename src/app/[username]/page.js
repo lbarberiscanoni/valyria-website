@@ -142,10 +142,15 @@ export default function Portfolio() {
             <div className="space-y-16">
               {userProjects.map((project, index) => (
                 <Grid2Cols key={index} className={index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}>
+
+
                   {/* Project Image/Placeholder - Alternate left and right */}
-                  <div className={`bg-gray-200 h-80 flex-center ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                    <span className="text-2xl text-gray-500">{project.name}</span>
+                 <a href={project["video-url"]} target="_blank" rel="noopener noreferrer">
+                  <div className="bg-gray-200 h-80 flex items-center justify-center">
+                    <img src={project.thumbnail} alt={project.name} className="w-full h-full object-cover" />
                   </div>
+                   </a>
+
                   
                   {/* Project Details */}
                   <div className={index % 2 === 1 ? 'lg:col-start-1' : ''}>
