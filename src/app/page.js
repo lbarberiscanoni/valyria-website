@@ -87,10 +87,15 @@ export default function Home() {
               
               return (
                 <Card key={index}>
-                  <div className="h-48 bg-gray-200 flex-center">
+
                     {/* Placeholder for project image */}
-                    <span className="text-2xl text-gray-500">{project.name}</span>
+
+                  <a href={project["video-url"]} target="_blank" rel="noopener noreferrer">
+                  <div className="h-48 bg-gray-200">
+                    <img src={project.thumbnail} alt={project.name} className="w-full h-full object-cover" />
                   </div>
+                    </a>
+
                   
                   <Card.Body>
                     <Card.Title>{project.name}</Card.Title>
