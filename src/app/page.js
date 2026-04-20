@@ -90,11 +90,17 @@ export default function Home() {
 
                     {/* Placeholder for project image */}
 
-                  <a href={project["video-url"]} target="_blank" rel="noopener noreferrer">
-                  <div className="h-48 bg-gray-200">
-                    <img src={project.thumbnail} alt={project.name} className="w-full h-full object-cover" />
-                  </div>
-                    </a>
+               <a href={project["video-url"]} target="_blank" rel="noopener noreferrer">
+  <div className="h-48 bg-gray-200">
+    {project.thumbnail ? (
+      <img src={project.thumbnail} alt={project.name} className="w-full h-full object-cover" />
+    ) : (
+      <div className="h-full flex items-center justify-center">
+        <span className="text-2xl text-gray-500">{project.name}</span>
+      </div>
+    )}
+  </div>
+</a>
 
                   
                   <Card.Body>

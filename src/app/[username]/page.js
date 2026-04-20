@@ -145,11 +145,20 @@ export default function Portfolio() {
 
 
                   {/* Project Image/Placeholder - Alternate left and right */}
+
+
+
                  <a href={project["video-url"]} target="_blank" rel="noopener noreferrer">
-                  <div className="bg-gray-200 h-80 flex items-center justify-center">
-                    <img src={project.thumbnail} alt={project.name} className="w-full h-full object-cover" />
-                  </div>
-                   </a>
+  <div className="h-80 bg-gray-200">
+    {project.thumbnail ? (
+      <img src={project.thumbnail} alt={project.name} className="w-full h-full object-cover" />
+    ) : (
+      <div className="h-full flex items-center justify-center">
+        <span className="text-2xl text-gray-500">{project.name}</span>
+      </div>
+    )}
+  </div>
+</a>
 
                   
                   {/* Project Details */}
