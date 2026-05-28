@@ -101,10 +101,11 @@
             "designer": "Christina Boiles",
             "client": "Generosity Bay Area (GBA)",
             "project-url": "", 
-            "video-url": "",
+            "video-url": "https://www.loom.com/share/dbe6a8349f0e4ab1a6f65a81bc5e9b93",
+            "thumbnail": "/thumbnails/gba.png",
             "repo-link": "https://github.com/Valyria-Studios/gba-donations-page",
             "client-url": "https://www.generositybayarea.org/",
-            "description": "",
+            "description": " An anonymous donations post feed on a Squarespace page, to encourage the community to grow in generosity to causes locally and globally. Users can submit posts of their donations by filling in the onsite form. The live feed displays the recipients and amounts of user's donations, but keeps the donors anonymous.",
             "start_date": "2024-04-01", 
             "end_date": "2024-10-31"    
         },
@@ -114,26 +115,15 @@
             "designer": "Madison Minsk",
             "client": "Stanford GSB Team (Tom, Madison, Leif)",
             "project-url": "https://roo-frontend-mocha.vercel.app/login",
-            "video-url": "",
+            "video-url": "https://www.loom.com/share/cd99ff91c0094a85bb93079f75a4660d",
+            "thumbnail": "/thumbnails/restaurant.png",
             "repo-link": "https://github.com/Timchung18/roo-frontend", 
             "client-url": "",
-            "description": "",
+            "description": "Roo is a restaurant reservation management system. Diners can make reservations, and restaurants can manage reservations.",
             "start_date": "2024-07-01", 
             "end_date": "2024-10-31" 
         },
-        {
-            "name": "Driven",
-            "developer": "Tim Cheung",
-            "designer": "",
-            "client": "Deangelo Smith",
-            "project-url": "https://paywithdriven-app.vercel.app/", 
-            "video-url": "",
-            "repo-link": "https://github.com/Timchung18/driven_app", 
-            "client-url": "https://www.paywithdriven.com/",
-            "description": "Buy Now Pay Later for parking tickets. Includes user frontend and admin dashboard applications.",
-            "start_date": "2024-10-01",
-            "end_date": "2024-12-31"
-        },
+       
         {
             "name": "Help One Child Survey",
             "developer": "Meryl Marasigan",
@@ -153,12 +143,46 @@
             "designer": "",
             "client": "",
             "project-url": "https://date-me-directory-ieco.vercel.app/",
-            "video-url": "",
+            "video-url": "https://www.loom.com/share/1943b7640cbe4a85a8079e7feff5b059",
+            "thumbnail": "/thumbnails/date.png",
             "repo-link": "https://github.com/TreesaAbraham/DateMeDirectory",
             "client-url": "",
             "description": "",
             "start_date": "",
             "end_date": ""
+        },
+        {
+            "name": "AI Advocate",
+            "developer": "Joel Abraham",
+            "designer": "",
+            "client": "Love Never Fails",
+            "project-url": "https://www.ai-advocate.org/",
+            "video-url": "https://www.loom.com/share/0f13da57e5904712ac017d0797e42118",
+            "thumbnail": "/thumbnails/advocate.png",
+
+            "repo-link": "https://github.com/JoelA510/AIAdvocate",
+            "client-url": "https://www.loveneverfailsus.com/",
+            "description": "AI Advocate is a production web and mobile application for Love Never Fails that helps survivors, allies, advocates, and community members understand California legislation. The app provides curated bill feeds, bilingual plain-language AI summaries, representative lookup, vote-history context, outreach tools, and privacy-conscious Supabase-backed infrastructure. Built with Expo, React Native, Supabase, PostgreSQL, Edge Functions, translations, and row-level security.",
+            "start_date": "",
+            "end_date": ""
+        },
+          {
+            "name": "PlanterPlan",
+            "developer": "Joel Abraham",
+            "designer": "",
+            "client": "PlanterPlan / Passion for Planting",
+            "project-url": "https://planter-plan.vercel.app/",
+            "video-url": "",
+
+            "repo-link": "https://github.com/JoelA510/PlanterPlan-Alpha",
+            "description": "PlanterPlan is an ongoing rebuild and modernization of a church-planting project management application. The platform turns a phase-based planning process into structured workflows for project setup, launch timelines, task coordination, team collaboration, reporting, and role-based access. The implementation emphasizes secure Supabase-backed workflows, row-level security, safe schema migration protocols, single-source-of-truth architecture documentation, machine-readable development context, and automated quality gates. Built with React, TypeScript, Supabase, PostgreSQL, Vitest, and Playwright.",
+            "start_date": "",
+            "end_date": ""
         }
+
+
+
+
+
     ]
 }

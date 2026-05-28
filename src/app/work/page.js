@@ -5,6 +5,8 @@ import Section from "@/components/Section";
 import Container from "@/components/Container";
 import Button from "@/components/Button";
 import { Grid2Cols } from "@/components/Grid";
+import ProjectCard from "@/components/ProjectCard";
+
 
 export default function Work() {
   const { projects } = projectsData;
@@ -28,90 +30,12 @@ export default function Work() {
             const slug = project.developer.toLowerCase().replace(/\s+/g, "-");
             
             return (
-              <div key={index} className="mb-24 last:mb-0">
-                <Grid2Cols>
-                  {/* Project Image/Placeholder */}
 
-                  
-                  <a href={project["video-url"]} target="_blank" rel="noopener noreferrer">
-  <div className="h-80 bg-gray-200">
-    {project.thumbnail ? (
-      <img src={project.thumbnail} alt={project.name} className="w-full h-full object-cover" />
-    ) : (
-      <div className="h-full flex items-center justify-center">
-        <span className="text-2xl text-gray-500">{project.name}</span>
-      </div>
-    )}
-  </div>
-</a>
+                <div key={index} className="mb-24 last:mb-0">
+                  <ProjectCard project={project} />
+                </div>
 
-                  {/* Project Details */}
-                  <div>
-                    <h2 className="heading-md mb-4">{project.name}</h2>
-                    
-                    <div className="grid grid-cols-2 gap-4 mb-6">
-                      <div>
-                        <p className="text-caption font-medium">Client</p>
-                        <p className="text-body-lg">{project.client}</p>
-                      </div>
-                      <div>
-                        <p className="text-caption font-medium">Developer</p>
-                        <Link href={`/${slug}`} className="text-body-lg hover:underline">
-                          {project.developer}
-                        </Link>
-                      </div>
-                      <div>
-                        <p className="text-caption font-medium">Designer</p>
-                        <p className="text-body-lg">{project.designer}</p>
-                      </div>
-                      <div>
-                        <p className="text-caption font-medium">Year</p>
-                        <p className="text-body-lg">2023</p>
-                      </div>
-                    </div>
-                    
-                    <p className="text-body mb-8">
-                      {project.description}
-                    </p>
-                    
-                    <div className="flex flex-wrap gap-4">
-                      {project["project-url"] && (
-                        <Button 
-                          href={project["project-url"]} 
-                          variant="primary"
-                        >
-                          View Live Project
-                        </Button>
-                      )}
-                      
-                      {project["repo-link"] && (
-                        <Button 
-                          href={project["repo-link"]} 
-                          variant="secondary"
-                        >
-                          GitHub Repository
-                        </Button>
-                      )}
-                      
-                      {project["video-url"] && (
-                        <Button 
-                          href={project["video-url"]} 
-                          variant="secondary"
-                        >
-                          Watch Demo
-                        </Button>
-                      )}
-                      
-                      <Button 
-                        href={`/${slug}`}
-                        variant="secondary"
-                      >
-                        Developer&apos;s Portfolio
-                      </Button>
-                    </div>
-                  </div>
-                </Grid2Cols>
-              </div>
+
             );
           })}
         </Container>

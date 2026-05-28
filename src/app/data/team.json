@@ -109,6 +109,22 @@
           "linkedin": "https://www.linkedin.com/in/meryl-marasigan/",
           "github": "https://github.com/merylmarasigan"
         }
+      },
+
+      {
+        "name": "Joel Abraham",
+        "role": "Developer",
+        "image": "/joel.jpg",
+        "bio": "Full-stack developer focused on mission-driven web and mobile software. Builds React, React Native, Expo, Supabase, and PostgreSQL applications with secure data access, structured workflows, AI-assisted summarization, automated testing, and production-minded documentation. Current Valyria-aligned work includes AI Advocate for Love Never Fails and the ongoing rebuild of PlanterPlan, a church-planting project management platform.",
+        "skills": ["React Native", "Typescript", "Supabase"],
+        "links": {
+          "linkedin": "https://www.linkedin.com/in/joel-abraham-cv/",
+          "github": "https://github.com/JoelA510",
+          "portfolio_url": "https://secureyour.tech"
+        }
       }
+
+
+
     ]
   }

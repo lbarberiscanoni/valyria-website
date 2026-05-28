@@ -6,6 +6,8 @@ import Container from "@/components/Container";
 import Button from "@/components/Button";
 import Card from "@/components/Card";
 import { Grid3Cols } from "@/components/Grid";
+import ProjectCard from "@/components/ProjectCard";
+
 
 export default function Home() {
   const { projects } = projectsData;
@@ -86,55 +88,10 @@ export default function Home() {
               const slug = project.developer.toLowerCase().replace(/\s+/g, "-");
               
               return (
-                <Card key={index}>
+               
+              <ProjectCard key={index} project={project} size="small" />
 
-                    {/* Placeholder for project image */}
 
-               <a href={project["video-url"]} target="_blank" rel="noopener noreferrer">
-  <div className="h-48 bg-gray-200">
-    {project.thumbnail ? (
-      <img src={project.thumbnail} alt={project.name} className="w-full h-full object-cover" />
-    ) : (
-      <div className="h-full flex items-center justify-center">
-        <span className="text-2xl text-gray-500">{project.name}</span>
-      </div>
-    )}
-  </div>
-</a>
-
-                  
-                  <Card.Body>
-                    <Card.Title>{project.name}</Card.Title>
-                    
-                    <Card.Subtitle>
-                      <span className="font-medium">Client:</span> {project.client} • <span className="font-medium">Designer:</span> {project.designer}
-                    </Card.Subtitle>
-                    
-                    <p className="text-body line-clamp-3 mb-4">
-                      {project.description}
-                    </p>
-                    
-                    <Card.Action>
-                      <Link 
-                        href={`/${slug}`} 
-                        className="text-link"
-                      >
-                        View details
-                      </Link>
-                      
-                      {project["project-url"] && (
-                        <a 
-                          href={project["project-url"]} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="text-link"
-                        >
-                          Live project
-                        </a>
-                      )}
-                    </Card.Action>
-                  </Card.Body>
-                </Card>
               );
             })}
           </Grid3Cols>
