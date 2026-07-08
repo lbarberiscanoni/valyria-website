@@ -9,6 +9,7 @@ import Section from "@/components/Section";
 import Container from "@/components/Container";
 import Button from "@/components/Button";
 import { Grid2Cols } from "@/components/Grid";
+import { sortProjectsByDate, getDaysToCompletion } from "@/lib/projects";
 
 export default function Portfolio() {
   // Use the useParams hook to get the username parameter
@@ -37,8 +38,10 @@ export default function Portfolio() {
   });
   
   // Find projects for this team member
-  const userProjects = projectsData.projects.filter(
-    (project) => teamMember && project.developer === teamMember.name
+  const userProjects = sortProjectsByDate(
+    projectsData.projects.filter(
+      (project) => teamMember && project.developer === teamMember.name
+    )
   );
 
   // If no team member found, use the URL to create a display name
@@ -180,8 +183,18 @@ export default function Portfolio() {
                       </div>
                       <div>
                         <p className="text-caption font-medium">Year</p>
-                        <p>2023</p>
+                        <p>
+                          {project.start_date
+                            ? new Date(project.start_date).getFullYear()
+                            : "TBD"}
+                        </p>
                       </div>
+                      {getDaysToCompletion(project) !== null && (
+                        <div>
+                          <p className="text-caption font-medium">Days to Completion</p>
+                          <p>{getDaysToCompletion(project)}</p>
+                        </div>
+                      )}
                     </div>
                     
                     <p className="text-body mb-8">

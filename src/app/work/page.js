@@ -6,10 +6,11 @@ import Container from "@/components/Container";
 import Button from "@/components/Button";
 import { Grid2Cols } from "@/components/Grid";
 import ProjectCard from "@/components/ProjectCard";
+import { sortProjectsByDate } from "@/lib/projects";
 
 
 export default function Work() {
-  const { projects } = projectsData;
+  const projects = sortProjectsByDate(projectsData.projects);
 
   return (
     <>

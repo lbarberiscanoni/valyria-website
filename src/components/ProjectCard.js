@@ -3,8 +3,11 @@
 // src/components/ProjectCard.js
 import Link from "next/link";
 import Button from "@/components/Button";
+import { formatProjectDateRange, getDaysToCompletion } from "@/lib/projects";
 
 export default function ProjectCard({ project, size = "large" }) {
+  const dateRange = formatProjectDateRange(project);
+  const daysToCompletion = getDaysToCompletion(project);
   const slug = project.developer.toLowerCase().replace(/\s+/g, "-");
   const imageHeight = size === "small" ? "h-48" : "h-80";
 
@@ -42,6 +45,9 @@ export default function ProjectCard({ project, size = "large" }) {
             <span className="font-medium">Client:</span> {project.client} •{" "}
             <span className="font-medium">Designer:</span> {project.designer}
           </p>
+          {dateRange && (
+            <p className="text-caption text-gray-500 mb-2">{dateRange}</p>
+          )}
           <p className="text-body line-clamp-3 mb-4">{project.description}</p>
           <div className="card-action gap-4">
             <Link href={`/${slug}`} className="text-link">
@@ -84,6 +90,18 @@ export default function ProjectCard({ project, size = "large" }) {
             <p className="text-caption font-medium">Designer</p>
             <p className="text-body-lg">{project.designer}</p>
           </div>
+          {dateRange && (
+            <div>
+              <p className="text-caption font-medium">Date</p>
+              <p className="text-body-lg">{dateRange}</p>
+            </div>
+          )}
+          {daysToCompletion !== null && (
+            <div>
+              <p className="text-caption font-medium">Days to Completion</p>
+              <p className="text-body-lg">{daysToCompletion}</p>
+            </div>
+          )}
         </div>
         <p className="text-body mb-8">{project.description}</p>
         <div className="flex flex-wrap gap-4">

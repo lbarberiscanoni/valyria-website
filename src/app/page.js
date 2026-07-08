@@ -7,10 +7,11 @@ import Button from "@/components/Button";
 import Card from "@/components/Card";
 import { Grid3Cols } from "@/components/Grid";
 import ProjectCard from "@/components/ProjectCard";
+import { sortProjectsByDate } from "@/lib/projects";
 
 
 export default function Home() {
-  const { projects } = projectsData;
+  const projects = sortProjectsByDate(projectsData.projects);
 
   return (
     <>
