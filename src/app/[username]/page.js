@@ -91,24 +91,35 @@ export default function Portfolio() {
               
               <div className="flex gap-4">
                 {teamMember && teamMember.links.github && (
-                  <a 
-                    href={teamMember.links.github} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href={teamMember.links.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-link"
                   >
                     GitHub Profile
                   </a>
                 )}
-                
+
                 {teamMember && teamMember.links.linkedin && (
-                  <a 
-                    href={teamMember.links.linkedin} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href={teamMember.links.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-link"
                   >
                     LinkedIn Profile
+                  </a>
+                )}
+
+                {teamMember && teamMember.links.portfolio_url && (
+                  <a
+                    href={teamMember.links.portfolio_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-link"
+                  >
+                    Portfolio
                   </a>
                 )}
               </div>
