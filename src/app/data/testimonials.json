@@ -1,0 +1,19 @@
+{
+    "testimonials": [
+        {
+            "quote": "Valyria understood our vision from day one and delivered an app our volunteers actually love using.",
+            "author": "Sam McClure",
+            "role": "Founder, Cedar Grove Carbon Trust"
+        },
+        {
+            "quote": "The team moved fast without cutting corners. Communication was clear at every step of the project.",
+            "author": "Geo Browser Team",
+            "role": "Client, Ellis App"
+        },
+        {
+            "quote": "Working with student developers who care this much about quality was a pleasant surprise. Highly recommend.",
+            "author": "Anonymous",
+            "role": "Nonprofit Partner"
+        }
+    ]
+}
