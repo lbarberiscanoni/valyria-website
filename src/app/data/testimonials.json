@@ -1,19 +1,14 @@
 {
     "testimonials": [
         {
-            "quote": "Valyria understood our vision from day one and delivered an app our volunteers actually love using.",
+            "quote": "Valyria has been an essential, efficient, and extremely productive partner for us on multiple projects. The team takes the time to understand the broader context and strategy, but also cares about small details. We have been very happy working with Noah Broome, in particular, who is thoughtful, dedicated, and a very fast learner. I would highly recommend this team to anyone interested in outside developer or design support.",
             "author": "Sam McClure",
             "role": "Founder, Cedar Grove Carbon Trust"
         },
         {
-            "quote": "The team moved fast without cutting corners. Communication was clear at every step of the project.",
-            "author": "Geo Browser Team",
-            "role": "Client, Ellis App"
-        },
-        {
-            "quote": "Working with student developers who care this much about quality was a pleasant surprise. Highly recommend.",
-            "author": "Anonymous",
-            "role": "Nonprofit Partner"
+            "quote": "Working with Valyria was a highly collaborative experience — Lorenzo was responsive to every round of feedback and understood the heart behind our ministry, not just the technical ask. Our leadership team was impressed by the speed of execution, attentiveness to deadlines, and care taken with our customizations and aesthetics. His rates were fair, and unlike a past contractor who overcharged us with nothing usable to show for it, Lorenzo delivered a dashboard that actually worked for us.",
+            "author": "Leah Sutterlin",
+            "role": "Manager of Innovation, Christian Alliance for Orphans"
         }
     ]
 }
