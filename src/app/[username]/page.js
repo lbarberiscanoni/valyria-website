@@ -124,14 +124,9 @@ export default function Portfolio() {
                 )}
 
                 {teamMember && teamMember.links.resume_url && (
-                  <a
-                    href={teamMember.links.resume_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-link"
-                  >
+                  <Link href={`/${username}/resume`} className="text-link">
                     Resume
-                  </a>
+                  </Link>
                 )}
               </div>
             </div>
