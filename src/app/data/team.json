@@ -117,6 +117,73 @@
         "image": "/joel.jpg",
         "bio": "Full-stack developer focused on mission-driven web and mobile software. Builds React, React Native, Expo, Supabase, and PostgreSQL applications with secure data access, structured workflows, AI-assisted summarization, automated testing, and production-minded documentation. Current Valyria-aligned work includes AI Advocate for Love Never Fails and the ongoing rebuild of PlanterPlan, a church-planting project management platform.",
         "skills": ["React Native", "Typescript", "Supabase"],
+        "resume": {
+          "title": "Product Designer",
+          "experience": [
+            {
+              "role": "Product Designer",
+              "company": "Shopify",
+              "dates": "Jan 2021 - Present",
+              "bullets": [
+                "Currently part of the Admin Quality team working horizontally across teams improving UX quality, building design systems, patterns, and designing out new 0-1 experiences.",
+                "Designed and lead the efforts for a new design system for the settings area of our admin product which has lead to a more cohesive UX across the org and reduced dev times in half.",
+                "Designed and shipped a new app navigation experience for 2M+ merchants across the platform, increasing their time spent navigating apps from 2-4 seconds to instant."
+              ]
+            },
+            {
+              "role": "Experience Designer",
+              "company": "Konrad Group",
+              "dates": "May 2019 - Dec 2020",
+              "bullets": [
+                "Primarily worked with clients to design out new internal toolings, marketing website refresh, and mobile applications.",
+                "Designed and pitched solutions to high profile clients outlining design directions and their impacts on their business KPIs & success metrics.",
+                "Worked with business consultants and developers to create technically feasible design solutions for over 10+ clients within the given project timeline."
+              ]
+            },
+            {
+              "role": "Executive Communications Manager",
+              "company": "YSDN Graduate Show",
+              "dates": "Sep 2018 - April 2019",
+              "bullets": [
+                "Managed 12 executive teams with the overall organization and execution of the graduate show event viewed by 100+ industry professionals.",
+                "Providing project management skills and strategies to all 12 teams in order to help them meet tight deadlines and boost team cultures.",
+                "Responsible for communication lines between teams, making sure that all work back schedules are in sync."
+              ]
+            },
+            {
+              "role": "Experience Designer",
+              "company": "League of Innovators",
+              "dates": "Jun 2018 - Dec 2018",
+              "bullets": [
+                "Designed out the entire business accelerator learning platform from scratch within a 3 month time frame which has now been used by 80+ Canadian start-ups."
+              ]
+            }
+          ],
+          "education": [
+            {
+              "school": "York Sheridan Design",
+              "institution": "York University",
+              "dates": "Sep 2015 - Apr 2019",
+              "description": "Bachelor of Design. Honours and Magna Cum Laude recipient."
+            },
+            {
+              "school": "Geography & Environmental Management",
+              "institution": "University of Waterloo",
+              "dates": "Sep 2013 - Jun 2015",
+              "description": "Bachelor of Environmental Studies in Geography and Environmental Management."
+            }
+          ],
+          "awards": [
+            { "name": "ADCC Student Competition 2018", "description": "Gold Award Recipient - Advertising & Design Club of Canada" },
+            { "name": "Quarry Award for UX Design 2018", "description": "RGD Student Awards" },
+            { "name": "Fjord Award for Digital Product Design 2018", "description": "Honourable Mention - RGD Student Awards" },
+            { "name": "John St Award for Strategic Design 2018", "description": "Honourable Mention - RGD Student Awards" }
+          ],
+          "resume_skills": ["Adobe Creative Suite", "Sketch / Figma", "Flinto / Principle / InVision", "HTML/CSS", "UX/UI Design", "Atomic Design Systems"],
+          "notable": [
+            { "name": "ADPlist Design Mentor", "dates": "2021 - Present" }
+          ]
+        },
         "links": {
           "linkedin": "https://www.linkedin.com/in/joel-abraham-cv/",
           "github": "https://github.com/JoelA510",
