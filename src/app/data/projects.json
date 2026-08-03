@@ -173,8 +173,8 @@
             "designer": "",
             "client": "PlanterPlan / Passion for Planting",
             "project-url": "https://planter-plan.vercel.app/",
-            "video-url": "",
-
+            "video-url": "https://www.loom.com/share/d8c04c93856c40f9b8c8757549dded95",
+            "thumbnail": "/thumbnails/planterplan.png",
             "repo-link": "https://github.com/JoelA510/PlanterPlan-Alpha",
             "description": "PlanterPlan is an ongoing rebuild and modernization of a church-planting project management application. The platform turns a phase-based planning process into structured workflows for project setup, launch timelines, task coordination, team collaboration, reporting, and role-based access. The implementation emphasizes secure Supabase-backed workflows, row-level security, safe schema migration protocols, single-source-of-truth architecture documentation, machine-readable development context, and automated quality gates. Built with React, TypeScript, Supabase, PostgreSQL, Vitest, and Playwright.",
             "start_date": "",
