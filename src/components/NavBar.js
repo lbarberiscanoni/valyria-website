@@ -35,6 +35,9 @@ export default function NavBar() {
             <Link href="/services" className={`${isActive('/services')} transition-colors duration-200`}>
               Services
             </Link>
+            <Link href="/testimonials" className={`${isActive('/testimonials')} transition-colors duration-200`}>
+              Testimonials
+            </Link>
           </div>
         </div>
       </Container>
